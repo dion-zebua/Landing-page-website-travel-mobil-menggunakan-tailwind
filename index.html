@@ -30,14 +30,15 @@
                         <li><a href="#">Rute Travel</a></li>
                         <li><a href="#">Galeri</a></li>
                         <li><a href="#">Kontak</a></li>
-                        <a href="#" class="flex gap-2 px-5 py-2 bg-blue-800 hover:bg-blue-600 text-slate-200 rounded">
+                        <a href="#"
+                            class="flex gap-2 px-5 py-2 bg-blue-800 hover:bg-blue-600 text-slate-200 rounded-lg w-min">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                                 stroke="currentColor" class="size-6">
                                 <path stroke-linecap="round" stroke-linejoin="round"
                                     d="M8.625 12a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H8.25m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H12m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 0 1-2.555-.337A5.972 5.972 0 0 1 5.41 20.97a5.969 5.969 0 0 1-.474-.065 4.48 4.48 0 0 0 .978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25Z" />
                             </svg>Pesan</a>
                     </ul>
-                    <ul class="absolute inset-0 py-20 px-5 bg-slate-950/80 md:hidden !hidden" id="popupNav">
+                    <ul class="absolute inset-0 py-20 px-5 z-20 bg-slate-950/90 md:hidden !hidden" id="popupNav">
                         <div
                             class="bg-white rounded flex p-5 flex-col md:flex-row gap-4 [&_li]:flex [&_li]:items-center [&_li_a]:font-medium [&_li_a]:text-slate-700 hover:[&_li_a]:text-blue-600 hover:[&_li]:transition-all hover:[&_li_a]:scale-110 relative">
 
@@ -56,7 +57,7 @@
                             <li><a href="#">Galeri</a></li>
                             <li><a href="#">Kontak</a></li>
                             <a href="#"
-                                class="flex gap-2 px-5 py-2 bg-blue-800 hover:bg-blue-600 text-slate-200 rounded">
+                                class="flex gap-2 px-5 py-2 bg-blue-800 hover:bg-blue-600 text-slate-200 rounded-lg w-min">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                     stroke-width="1.5" stroke="currentColor" class="size-6">
                                     <path stroke-linecap="round" stroke-linejoin="round"
@@ -76,14 +77,35 @@
                 <div
                     class="absolute rounded-lg inset-0 bg-[radial-gradient(rgb(15_23_42_/_0),rgb(51_65_85_/_0.9))] from-0% via-50% to-100%">
                 </div>
-                <div class="grid grid-cols-12">
+                <div class="grid grid-cols-12 [&>div]:col-span-full">
 
-                    <div class="md:col-span-7 p-5 md:-top-10 lg:p-20 z-10">
-                        <h1 class="text-white text-5xl">
-                            Jasa Travel Reguler Terbaik di Jawa Timur
+                    <div class="md:!col-span-8 lg:!col-span-7 p-5 md:p-10 md:-top-10 lg:p-20 z-10">
+                        <h1
+                            class="text-white text-3xl leading-[40px] sm:text-3xl sm:leading-[40px] lg:text-6xl lg:leading-[70px] font-bold text-left sm:max-w-[600px] lg:max-w-full">
+                            Jasa Travel Reguler Terbaik di Jawa Timur 2024
                         </h1>
+                        <div class="flex gap-x-5 mt-5">
+                            <a href="#"
+                                class="flex gap-2 px-5 py-2 border-2 border-blue-800 hover:border-blue-600 bg-blue-800 hover:bg-blue-600 text-slate-200 rounded-lg w-min top-0 hover:top-2 transition-all relative">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="size-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M8.625 12a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H8.25m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H12m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 0 1-2.555-.337A5.972 5.972 0 0 1 5.41 20.97a5.969 5.969 0 0 1-.474-.065 4.48 4.48 0 0 0 .978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25Z" />
+                                </svg>Pesan
+                            </a>
+                            <a href="#"
+                                class="flex gap-2 px-5 py-2 border-2 border-blue-600 bg-transparent hover:bg-blue-600 text-slate-200 rounded-lg w-min top-0 hover:top-2 transition-all relative">
+                                <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="size-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M8.625 12a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H8.25m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H12m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 0 1-2.555-.337A5.972 5.972 0 0 1 5.41 20.97a5.969 5.969 0 0 1-.474-.065 4.48 4.48 0 0 0 .978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25Z" />
+                                </svg> -->
+                                Rute
+                            </a>
+                        </div>
+
                     </div>
-                    <div class="md:col-span-5 p-5 md:-top-10 lg:p-20 z-10"></div>
+                    <div class="md:!col-span-4 lg:!col-span-5 p-5 md:p-10 md:-top-10 lg:p-20 z-10"></div>
                 </div>
             </div>
         </section>
