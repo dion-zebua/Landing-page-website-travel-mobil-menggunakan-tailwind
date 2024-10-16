@@ -1,117 +1,367 @@
-<!doctype html>
-<html>
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./src/css/output.css" rel="stylesheet">
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <link
+      href="./src/css/output.css"
+      rel="stylesheet" />
     <title>Jasa Travel</title>
-    <meta name="description" content="Jasa Travel">
-</head>
+    <meta
+      name="description"
+      content="Jasa Travel" />
+  </head>
 
-<body class="font-poppins text-slate-700">
+  <body class="font-poppins text-slate-700">
     <header class="container">
-        <div class="flex justify-between py-2">
-            <div class="grid place-items-center">
-                <img src="./src/img/logo-travel.png" class="w-28 m-auto" alt="logo">
-            </div>
-            <div class="flex items-center">
-                <nav>
-                    <button title="open nav" id="openNav" class="bg-blue-800 hover:bg-blue-600 p-1 rounded md:hidden">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="size-6 stroke-slate-100 hover:stroke-slate-200">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                        </svg>
-                    </button>
-                    <ul
-                        class="hidden md:flex flex-col md:flex-row gap-8 lg:gap-11 [&_li]:flex [&_li]:items-center [&_li_a]:font-medium [&_li_a]:text-slate-700 hover:[&_li_a]:text-blue-600 hover:[&_li]:scale-110 hover:[&_li]:transition-all">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Rute Travel</a></li>
-                        <li><a href="#">Galeri</a></li>
-                        <li><a href="#">Kontak</a></li>
-                        <a href="#"
-                            class="flex gap-2 px-5 py-2 bg-blue-800 hover:bg-blue-600 text-slate-200 rounded-lg w-min">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                stroke="currentColor" class="size-6">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                    d="M8.625 12a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H8.25m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H12m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 0 1-2.555-.337A5.972 5.972 0 0 1 5.41 20.97a5.969 5.969 0 0 1-.474-.065 4.48 4.48 0 0 0 .978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25Z" />
-                            </svg>Pesan</a>
-                    </ul>
-                    <ul class="absolute inset-0 py-20 px-5 z-20 bg-slate-950/90 md:hidden !hidden" id="popupNav">
-                        <div
-                            class="bg-white rounded flex p-5 flex-col md:flex-row gap-4 [&_li]:flex [&_li]:items-center [&_li_a]:font-medium [&_li_a]:text-slate-700 hover:[&_li_a]:text-blue-600 hover:[&_li]:transition-all hover:[&_li_a]:scale-110 relative">
-
-                            <button title="close nav" id="closeNav"
-                                class="absolute right-5 top-5 bg-blue-800 hover:bg-blue-600 p-1 rounded md:hidden">
-
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                    stroke-width="1.5" stroke="currentColor"
-                                    class="size-6 stroke-slate-100 hover:stroke-slate-200">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
-                                </svg>
-                            </button>
-
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Rute Travel</a></li>
-                            <li><a href="#">Galeri</a></li>
-                            <li><a href="#">Kontak</a></li>
-                            <a href="#"
-                                class="flex gap-2 px-5 py-2 bg-blue-800 hover:bg-blue-600 text-slate-200 rounded-lg w-min">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                    stroke-width="1.5" stroke="currentColor" class="size-6">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M8.625 12a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H8.25m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H12m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 0 1-2.555-.337A5.972 5.972 0 0 1 5.41 20.97a5.969 5.969 0 0 1-.474-.065 4.48 4.48 0 0 0 .978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25Z" />
-                                </svg>Pesan</a>
-                        </div>
-                    </ul>
-                </nav>
-            </div>
+      <div class="flex justify-between py-2">
+        <div class="grid place-items-center">
+          <img
+            src="./src/img/logo-travel.png"
+            class="w-28 m-auto"
+            alt="logo" />
         </div>
+        <div class="flex items-center">
+          <nav>
+            <button
+              title="open nav"
+              id="openNav"
+              class="bg-blue-800 hover:bg-blue-600 p-1 rounded md:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6 stroke-slate-100 hover:stroke-slate-200">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+              </svg>
+            </button>
+            <ul
+              class="hidden md:flex flex-col md:flex-row gap-8 lg:gap-11 [&_li]:flex [&_li]:items-center [&_li_a]:font-medium [&_li_a]:text-slate-700 hover:[&_li_a]:text-blue-600 hover:[&_li]:scale-110 hover:[&_li]:transition-all">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Rute Travel</a></li>
+              <li><a href="#">Galeri</a></li>
+              <li><a href="#">Kontak</a></li>
+              <a
+                href="#"
+                class="flex gap-2 px-5 py-2 bg-blue-800 hover:bg-blue-600 text-slate-200 rounded-lg w-min">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M8.625 12a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H8.25m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H12m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 0 1-2.555-.337A5.972 5.972 0 0 1 5.41 20.97a5.969 5.969 0 0 1-.474-.065 4.48 4.48 0 0 0 .978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25Z" />
+                </svg>
+                Pesan
+              </a>
+            </ul>
+            <ul
+              class="absolute inset-0 py-20 px-5 z-20 bg-slate-950/90 md:hidden !hidden"
+              id="popupNav">
+              <div
+                class="bg-white rounded flex p-5 flex-col md:flex-row gap-4 [&_li]:flex [&_li]:items-center [&_li_a]:font-medium [&_li_a]:text-slate-700 hover:[&_li_a]:text-blue-600 hover:[&_li]:transition-all hover:[&_li_a]:scale-110 relative">
+                <button
+                  title="close nav"
+                  id="closeNav"
+                  class="absolute right-5 top-5 bg-blue-800 hover:bg-blue-600 p-1 rounded md:hidden">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6 stroke-slate-100 hover:stroke-slate-200">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M6 18 18 6M6 6l12 12" />
+                  </svg>
+                </button>
+
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Rute Travel</a></li>
+                <li><a href="#">Galeri</a></li>
+                <li><a href="#">Kontak</a></li>
+                <a
+                  href="#"
+                  class="flex gap-2 px-5 py-2 bg-blue-800 hover:bg-blue-600 text-slate-200 rounded-lg w-min">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M8.625 12a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H8.25m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H12m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 0 1-2.555-.337A5.972 5.972 0 0 1 5.41 20.97a5.969 5.969 0 0 1-.474-.065 4.48 4.48 0 0 0 .978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25Z" />
+                  </svg>
+                  Pesan
+                </a>
+              </div>
+            </ul>
+          </nav>
+        </div>
+      </div>
     </header>
 
     <main>
-        <section class="container">
-            <div style="background-image: url(/src/img/background-hero-section.jpg);"
-                class="bg-cover bg-center rounded-lg relative">
-                <div
-                    class="absolute rounded-lg inset-0 bg-[radial-gradient(rgb(15_23_42_/_0),rgb(51_65_85_/_0.9))] from-0% via-50% to-100%">
+      <!-- Hero Section -->
+      <section class="container">
+        <div
+          style="background-image: url(/src/img/background-hero-section.jpg)"
+          class="py-10 lg:py-7 bg-fixed bg-cover bg-center rounded-lg relative">
+          <div
+            class="absolute rounded-lg inset-0 bg-[radial-gradient(rgb(15_23_42_/_0),rgb(51_65_85_/_0.9))] from-0% via-50% to-100%"></div>
+          <div
+            class="grid grid-cols-12 [&>div]:col-span-full items-center gap-y-6">
+            <div class="md:!col-span-7 p-5 md:p-10 md:-top-10 lg:p-20 z-10">
+              <h1
+                class="text-white text-3xl leading-[40px] md:text-[35px] md:leading-[50px] lg:text-5xl lg:leading-[70px] font-bold text-left sm:max-w-[600px] lg:max-w-full">
+                Jasa
+                <!-- <span class="text-blue-600 [text-shadow:_1px_1px_0_white,_-1px_-1px_0_white]">Travel</span> -->
+                <div class="inline-block">
+                  <img
+                    src="./src/img/logo-travel.png"
+                    class="w-28 m-auto -mb-2 [filter:drop-shadow(0px_1px_1px_white)_drop-shadow(-1px_-1px_1px_white)]"
+                    alt="logo" />
                 </div>
-                <div class="grid grid-cols-12 [&>div]:col-span-full">
-
-                    <div class="md:!col-span-8 lg:!col-span-7 p-5 md:p-10 md:-top-10 lg:p-20 z-10">
-                        <h1
-                            class="text-white text-3xl leading-[40px] sm:text-3xl sm:leading-[40px] lg:text-6xl lg:leading-[70px] font-bold text-left sm:max-w-[600px] lg:max-w-full">
-                            Jasa Travel Reguler Terbaik di Jawa Timur 2024
-                        </h1>
-                        <div class="flex gap-x-5 mt-5">
-                            <a href="#"
-                                class="flex gap-2 px-5 py-2 border-2 border-blue-800 hover:border-blue-600 bg-blue-800 hover:bg-blue-600 text-slate-200 rounded-lg w-min top-0 hover:top-2 transition-all relative">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                    stroke-width="1.5" stroke="currentColor" class="size-6">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M8.625 12a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H8.25m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H12m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 0 1-2.555-.337A5.972 5.972 0 0 1 5.41 20.97a5.969 5.969 0 0 1-.474-.065 4.48 4.48 0 0 0 .978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25Z" />
-                                </svg>Pesan
-                            </a>
-                            <a href="#"
-                                class="flex gap-2 px-5 py-2 border-2 border-blue-600 bg-transparent hover:bg-blue-600 text-slate-200 rounded-lg w-min top-0 hover:top-2 transition-all relative">
-                                <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                Reguler Terbaik di Jawa Timur 2024
+              </h1>
+              <div class="flex gap-x-5 mt-7">
+                <a
+                  href="#"
+                  class="flex gap-2 px-5 py-2 border-2 border-blue-800 hover:border-blue-600 bg-blue-800 hover:bg-blue-600 text-slate-200 rounded-lg w-min top-0 hover:top-2 transition-all duration-700 relative">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M8.625 12a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H8.25m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H12m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 0 1-2.555-.337A5.972 5.972 0 0 1 5.41 20.97a5.969 5.969 0 0 1-.474-.065 4.48 4.48 0 0 0 .978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25Z" />
+                  </svg>
+                  Pesan
+                </a>
+                <a
+                  href="#"
+                  class="flex gap-2 px-5 py-2 border-2 border-blue-600 bg-slate-950/30 hover:bg-blue-600 text-slate-50 rounded-lg w-min top-0 hover:top-2 transition-all duration-700 relative">
+                  <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                     stroke-width="1.5" stroke="currentColor" class="size-6">
                                     <path stroke-linecap="round" stroke-linejoin="round"
                                         d="M8.625 12a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H8.25m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H12m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 0 1-2.555-.337A5.972 5.972 0 0 1 5.41 20.97a5.969 5.969 0 0 1-.474-.065 4.48 4.48 0 0 0 .978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25Z" />
                                 </svg> -->
-                                Rute
-                            </a>
-                        </div>
-
-                    </div>
-                    <div class="md:!col-span-4 lg:!col-span-5 p-5 md:p-10 md:-top-10 lg:p-20 z-10"></div>
-                </div>
+                  Rute
+                </a>
+              </div>
             </div>
-        </section>
+            <div class="md:!col-span-5 p-5 md:p-10 md:-top-10 lg:p-20 z-10">
+              <div
+                class="bg-white rounded-2xl border-b-8 border-blue-600 shadow-lg p-5 px-7">
+                <h4 class="flex gap-x-2 font-medium">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M16.5 6v.75m0 3v.75m0 3v.75m0 3V18m-9-5.25h5.25M7.5 15h3M3.375 5.25c-.621 0-1.125.504-1.125 1.125v3.026a2.999 2.999 0 0 1 0 5.198v3.026c0 .621.504 1.125 1.125 1.125h17.25c.621 0 1.125-.504 1.125-1.125v-3.026a2.999 2.999 0 0 1 0-5.198V6.375c0-.621-.504-1.125-1.125-1.125H3.375Z" />
+                  </svg>
+
+                  <span class="opacity-90">Info Pemesanan</span>
+                </h4>
+                <div class="w-full bg-slate-200 h-[1px] my-5"></div>
+                <form
+                  class="grid grid-cols-2 gap-5"
+                  id="bookingForm">
+                  <div class="col-span-full text-sm">
+                    <label
+                      for="nama"
+                      class="block cursor-pointer opacity-70 font-medium"
+                      >Nama anda</label
+                    >
+                    <div class="mt-1">
+                      <input
+                        type="text"
+                        required
+                        name="nama"
+                        id="nama"
+                        autocomplete="off"
+                        class="cursor-pointer block w-full rounded-md border-0 py-1.5 px-2 shadow-sm ring-1 ring-inset ring-gray-300 focus:outline-blue-600 placeholder:text-gray-400 bg-slate-50" />
+                    </div>
+                  </div>
+
+                  <div class="col-span-full grid grid-cols-2 gap-x-3">
+                    <div class="text-sm">
+                      <label
+                        for="asal"
+                        class="block cursor-pointer opacity-70 font-medium"
+                        >Asal</label
+                      >
+                      <div class="mt-1">
+                        <input
+                          type="text"
+                          required
+                          name="asal"
+                          id="asal"
+                          autocomplete="off"
+                          class="cursor-pointer block w-full rounded-md border-0 py-1.5 px-2 shadow-sm ring-1 ring-inset ring-gray-300 focus:outline-blue-600 placeholder:text-gray-400 bg-slate-50" />
+                      </div>
+                    </div>
+                    <div class="text-sm">
+                      <label
+                        for="tujuan"
+                        class="block cursor-pointer opacity-70 font-medium"
+                        >Tujuan</label
+                      >
+                      <div class="mt-1">
+                        <input
+                          type="text"
+                          required
+                          name="tujuan"
+                          id="tujuan"
+                          autocomplete="off"
+                          class="cursor-pointer block w-full rounded-md border-0 py-1.5 px-2 shadow-sm ring-1 ring-inset ring-gray-300 focus:outline-blue-600 placeholder:text-gray-400 bg-slate-50" />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-span-full text-sm">
+                    <label
+                      for="jumlah"
+                      class="block cursor-pointer opacity-70 font-medium"
+                      >Jumlah Penumpang</label
+                    >
+                    <div class="mt-1">
+                      <select
+                        id="jumlah"
+                        name="jumlah"
+                        autocomplete="off"
+                        class="cursor-pointer block w-full rounded-md border-0 py-1.5 px-2 shadow-sm ring-1 ring-inset ring-gray-300 focus:outline-blue-600 placeholder:text-gray-400 bg-slate-50">
+                        <option>1 Orang</option>
+                        <option>2 Orang</option>
+                        <option>3 Orang</option>
+                        <option>4 Orang</option>
+                        <option>5 Orang</option>
+                        <option>6 Orang</option>
+                        <option>7 Orang</option>
+                        <option>8 Orang</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <button
+                    class="col-span-full px-5 py-2 border-2 border-blue-800 hover:border-blue-600 bg-blue-800 hover:bg-blue-600 text-slate-200 rounded-lg transition-all relative"
+                    type="submit">
+                    Pesan Sekarang
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Hero Section -->
+
+      <!-- About Us -->
+      <section class="container my-20">
+        <div class="">
+          <div class="text-center inner-container">
+            <h2 class="line-h2">Kota Populer</h2>
+            <p class="desc">
+             Kunjungi kota-kota terkenal bersama kami, nikmati pengalaman travel yang tak terlupakan dan menyenangkan!
+            </p>
+          </div>
+          <div
+            class="grid grid-cols-4 gap-x-6 gap-y-10 [&>*]:col-span-full [&>*]:sm:col-span-2 [&>*]:lg:col-span-1 [&>*]:border [&>*]:relative [&>*]:min-h-96 md:[&>*]:min-h-80 [&>*]:rounded-xl [&>*]:shadow-xl [&>*]:cursor-pointer [&>*]:overflow-hidden [&>*]:before:absolute [&>*]:before:content-[''] [&>*]:before:z-[2] [&>*]:before:inset-0 [&>*]:before:bg-slate-950/55 [&_img]:w-full [&_img]:h-full [&_img]:object-cover [&_img]:absolute [&_img]:inset-0 [&_img]:scale-100 [&_img]:transition-all [&_img]:duration-500 [&>div>div]:z-10 [&>div>div]:relative [&>div>div]:p-5 [&>div>div]:text-center [&>div>div]:flex-col [&>div>div]:flex [&>div>div]:justify-between [&>div>div]:h-full [&_h3]:text-slate-50 
+            [&_a]:col-span-full [&_a]:px-5 [&_a]:py-2 [&_a]:border-2 [&_a]:border-blue-800 hover:[&_a]:border-blue-600 [&_a]:bg-blue-800 hover:[&_a]:bg-blue-600 [&_a]:text-slate-200 [&_a]:rounded-lg [&_a]:transition-all [&_a]:relative">
+            <div class="group">
+              <img
+                src="/src/img/place/surabaya.jpg"
+                class="group-hover:scale-125"
+                alt="surabaya" />
+              <div class="">
+                <h3>Surabaya</h3>
+                <a
+                  href="#!"
+                  class="">
+                  Pesan Sekarang
+                </a>
+              </div>
+            </div>
+            <div class="group">
+              <img
+                src="/src/img/place/malang.jpg"
+                class="group-hover:scale-125"
+                alt="Malang" />
+              <div class="">
+                <h3>Malang</h3>
+                <a
+                  href="#!"
+                  class="">
+                  Pesan Sekarang
+                </a>
+              </div>
+            </div>
+            <div class="group">
+              <img
+                src="/src/img/place/bali.jpg"
+                class="group-hover:scale-125"
+                alt="Bali" />
+              <div class="">
+                <h3>Bali</h3>
+                <a
+                  href="#!"
+                  class="">
+                  Pesan Sekarang
+                </a>
+              </div>
+            </div>
+            <div class="group">
+              <img
+                src="/src/img/place/jogja.jpg"
+                class="group-hover:scale-125"
+                alt="Jogja" />
+              <div class="">
+                <h3>Jogja</h3>
+                <a
+                  href="#!"
+                  class="">
+                  Pesan Sekarang
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- About Us -->
+
+      <!-- Rute Travel -->
+       <section class="bg-blue-100 my-20">
+            <div class="container min-h-[1000px]"></div>
+       </section>
+      <!-- Rute Travel -->
     </main>
 
     <script src="./src/js/script.js"></script>
-</body>
-
+  </body>
 </html>
