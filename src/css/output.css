@@ -718,6 +718,14 @@ video {
   height: 100vh;
 }
 
+.h-\[\]{
+  height: ;
+}
+
+.h-72{
+  height: 18rem;
+}
+
 .w-28{
   width: 7rem;
 }
@@ -839,8 +847,16 @@ video {
   row-gap: 1.75rem;
 }
 
+.gap-y-8{
+  row-gap: 2rem;
+}
+
 .\!overflow-hidden{
   overflow: hidden !important;
+}
+
+.scroll-smooth{
+  scroll-behavior: smooth;
 }
 
 .rounded{
@@ -967,6 +983,11 @@ video {
 
 .stroke-slate-100{
   stroke: #f1f5f9;
+}
+
+.object-cover{
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .p-1{
@@ -1173,6 +1194,26 @@ video {
   --tw-ring-color: rgb(255 255 255 / var(--tw-ring-opacity));
 }
 
+.brightness-95{
+  --tw-brightness: brightness(.95);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.brightness-50{
+  --tw-brightness: brightness(.5);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.contrast-75{
+  --tw-contrast: contrast(.75);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.grayscale-0{
+  --tw-grayscale: grayscale(0);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
 .transition-all{
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1185,6 +1226,10 @@ video {
 
 .duration-700{
   transition-duration: 700ms;
+}
+
+.duration-500{
+  transition-duration: 500ms;
 }
 
 .\[filter\:drop-shadow\(0px_1px_1px_white\)_drop-shadow\(-1px_-1px_1px_white\)\]{
@@ -1334,6 +1379,11 @@ header.activeHeader{
   color: rgb(226 232 240 / var(--tw-text-opacity));
 }
 
+.hover\:brightness-90:hover{
+  --tw-brightness: brightness(.9);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
 .focus\:outline-blue-600:focus{
   outline-color: #2563eb;
 }
@@ -1361,6 +1411,10 @@ header.activeHeader{
 }
 
 @media (min-width: 576px){
+  .sm\:col-span-6{
+    grid-column: span 6 / span 6;
+  }
+
   .sm\:max-w-\[600px\]{
     max-width: 600px;
   }
@@ -1403,6 +1457,22 @@ header.activeHeader{
 
   .md\:\!col-span-7{
     grid-column: span 7 / span 7 !important;
+  }
+
+  .md\:col-span-4{
+    grid-column: span 4 / span 4;
+  }
+
+  .md\:col-span-2{
+    grid-column: span 2 / span 2;
+  }
+
+  .md\:col-span-3{
+    grid-column: span 3 / span 3;
+  }
+
+  .md\:col-span-8{
+    grid-column: span 8 / span 8;
   }
 
   .md\:flex{
