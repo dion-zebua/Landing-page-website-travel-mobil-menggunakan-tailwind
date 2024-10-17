@@ -1,7 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-/* @import 'swiper/swiper-bundle.css'; */
-
 *, ::before, ::after{
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -110,7 +108,9 @@
   --tw-contain-style:  ;
 }
 
-/* ! tailwindcss v3.4.13 | MIT License | https://tailwindcss.com */
+/*
+! tailwindcss v3.4.13 | MIT License | https://tailwindcss.com
+*/
 
 /*
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
@@ -669,6 +669,10 @@ video {
   margin-top: 2rem;
 }
 
+.mt-20{
+  margin-top: 5rem;
+}
+
 .block{
   display: block;
 }
@@ -710,10 +714,6 @@ video {
   height: 18rem;
 }
 
-.h-96{
-  height: 24rem;
-}
-
 .h-\[1px\]{
   height: 1px;
 }
@@ -724,22 +724,6 @@ video {
 
 .h-screen{
   height: 100vh;
-}
-
-.h-10{
-  height: 2.5rem;
-}
-
-.h-6{
-  height: 1.5rem;
-}
-
-.h-60{
-  height: 15rem;
-}
-
-.h-80{
-  height: 20rem;
 }
 
 .w-10{
@@ -1048,10 +1032,6 @@ video {
   padding: 2rem;
 }
 
-.p-10{
-  padding: 2.5rem;
-}
-
 .px-2{
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -1085,6 +1065,11 @@ video {
 .py-20{
   padding-top: 5rem;
   padding-bottom: 5rem;
+}
+
+.py-5{
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
 }
 
 .text-left{
@@ -1177,6 +1162,10 @@ video {
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.underline{
+  text-decoration-line: underline;
 }
 
 .opacity-70{
@@ -1687,17 +1676,9 @@ header.activeHeader{
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.\[\&\>div\]\:p-10>div{
-  padding: 2.5rem;
-}
-
 .\[\&\>div\]\:px-10>div{
   padding-left: 2.5rem;
   padding-right: 2.5rem;
-}
-
-.\[\&\>div\]\:pb-28>div{
-  padding-bottom: 7rem;
 }
 
 .\[\&\>div\]\:pb-10>div{
