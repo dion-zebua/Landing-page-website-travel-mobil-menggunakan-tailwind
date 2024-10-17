@@ -14,7 +14,6 @@
     <meta
       name="description"
       content="Jasa Travel" />
-
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -148,7 +147,7 @@
                 <div class="inline-block">
                   <img
                     src="./src/img/logo-travel.png"
-                    class="w-28 m-auto -mb-2 [filter:drop-shadow(0px_1px_1px_white)_drop-shadow(-1px_-1px_1px_white)]"
+                    class="w-32 m-auto -mb-2 [filter:drop-shadow(0px_1px_1px_white)_drop-shadow(-1px_-1px_1px_white)]"
                     alt="logo" />
                 </div>
                 Reguler Terbaik di Jawa Timur 2024
@@ -937,11 +936,12 @@
               </div>
             </div>
           </div> -->
-          <div class="h-auto">
-            <div class="swiper mySwiper !p-10">
+          <div class="[&>div]:h-full h-80">
+            <div class="swiper mySwiper">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                  <div class="shadow-2xl p-5 border rounded-xl">
+                  <div
+                    class="shadow-2xl p-5 border rounded-xl col-span-full sm:col-span-6 lg:col-span-4">
                     <div class="flex">
                       <img
                         src="./src/img/star.png"
@@ -981,7 +981,8 @@
                   </div>
                 </div>
                 <div class="swiper-slide">
-                  <div class="shadow-2xl p-5 border rounded-xl">
+                  <div
+                    class="shadow-2xl p-5 border rounded-xl col-span-full sm:col-span-6 lg:col-span-4">
                     <div class="flex">
                       <img
                         src="./src/img/star.png"
@@ -1021,7 +1022,8 @@
                   </div>
                 </div>
                 <div class="swiper-slide">
-                  <div class="shadow-2xl p-5 border rounded-xl">
+                  <div
+                    class="shadow-2xl p-5 border rounded-xl col-span-full sm:col-span-6 lg:col-span-4">
                     <div class="flex">
                       <img
                         src="./src/img/star.png"
@@ -1060,10 +1062,89 @@
                     </div>
                   </div>
                 </div>
-                <!-- <div class="swiper-slide">Slide 1</div> -->
+                <div class="swiper-slide">
+                  <div
+                    class="shadow-2xl p-5 border rounded-xl col-span-full sm:col-span-6 lg:col-span-4">
+                    <div class="flex">
+                      <img
+                        src="./src/img/star.png"
+                        alt="bintang"
+                        class="w-4" />
+                      <img
+                        src="./src/img/star.png"
+                        alt="bintang"
+                        class="w-4" />
+                      <img
+                        src="./src/img/star.png"
+                        alt="bintang"
+                        class="w-4" />
+                      <img
+                        src="./src/img/star.png"
+                        alt="bintang"
+                        class="w-4" />
+                      <img
+                        src="./src/img/star.png"
+                        alt="bintang"
+                        class="w-4" />
+                    </div>
+                    <p class="text-slate-500 text-[15px] my-5 testimoni-text">
+                      Saya menggunakan jasa travel reguler dari Surabaya ke
+                      Denpasar dan benar-benar puas dengan pengalamannya.
+                    </p>
+                    <div class="flex gap-x-4">
+                      <img
+                        src="./src/img/group.png"
+                        alt="testimoni"
+                        class="w-10 border rounded-3xl p-1 bg-gradient-to-r from-blue-600 to-blue-900" />
+                      <div class="flex flex-col justify-center">
+                        <p class="font-semibold text-sm">Dion Zebua</p>
+                        <p class="text-slate-500 text-xs">Web Developer</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div
+                    class="shadow-2xl p-5 border rounded-xl col-span-full sm:col-span-6 lg:col-span-4">
+                    <div class="flex">
+                      <img
+                        src="./src/img/star.png"
+                        alt="bintang"
+                        class="w-4" />
+                      <img
+                        src="./src/img/star.png"
+                        alt="bintang"
+                        class="w-4" />
+                      <img
+                        src="./src/img/star.png"
+                        alt="bintang"
+                        class="w-4" />
+                      <img
+                        src="./src/img/star.png"
+                        alt="bintang"
+                        class="w-4" />
+                      <img
+                        src="./src/img/star.png"
+                        alt="bintang"
+                        class="w-4" />
+                    </div>
+                    <p class="text-slate-500 text-[15px] my-5 testimoni-text">
+                      Saya menggunakan jasa travel reguler dari Surabaya ke
+                      Denpasar dan benar-benar puas dengan pengalamannya.
+                    </p>
+                    <div class="flex gap-x-4">
+                      <img
+                        src="./src/img/group.png"
+                        alt="testimoni"
+                        class="w-10 border rounded-3xl p-1 bg-gradient-to-r from-blue-600 to-blue-900" />
+                      <div class="flex flex-col justify-center">
+                        <p class="font-semibold text-sm">Dion Zebua</p>
+                        <p class="text-slate-500 text-xs">Web Developer</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="swiper-button-next"></div>
-              <div class="swiper-button-prev"></div>
               <div class="swiper-pagination"></div>
             </div>
           </div>
@@ -1073,41 +1154,35 @@
     </main>
 
     <!-- Slider main container -->
-    <div class="h-96"></div>
+    <!-- <div class="h-96"></div> -->
 
-    <script type="module">
-      import Swiper from "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs";
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
+    <script>
       var swiper = new Swiper(".mySwiper", {
         slidesPerView: 1,
-        loop: true,
-        slidesPerGroup: 1,
-        spaceBetween: 30,
-        grabCursor: true,
-        navigation: {
-          nextEl: "#next-category",
-          prevEl: "#prev-category",
-        },
         breakpoints: {
-          400: {
+          755: {
             slidesPerView: 2,
           },
-          1050: {
+          1100: {
             slidesPerView: 3,
           },
+          1400: {
+            slidesPerView: 4,
+          },
         },
+        loop: true,
+        spaceBetween: 30,
+        freeMode: true,
         autoplay: {
-          delay: 2000,
-          disableOnInteraction: false,
+          delay: 2500,
+          disableOnInteraction: true,
         },
         pagination: {
           el: ".swiper-pagination",
           clickable: true,
         },
-        // navigation: {
-        //   nextEl: ".swiper-button-next",
-        //   prevEl: ".swiper-button-prev",
-        // },
       });
     </script>
 

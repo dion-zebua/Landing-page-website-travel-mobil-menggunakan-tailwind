@@ -718,10 +718,6 @@ video {
   height: 1px;
 }
 
-.h-auto{
-  height: auto;
-}
-
 .h-full{
   height: 100%;
 }
@@ -730,12 +726,32 @@ video {
   height: 100vh;
 }
 
+.h-10{
+  height: 2.5rem;
+}
+
+.h-6{
+  height: 1.5rem;
+}
+
+.h-60{
+  height: 15rem;
+}
+
+.h-80{
+  height: 20rem;
+}
+
 .w-10{
   width: 2.5rem;
 }
 
 .w-28{
   width: 7rem;
+}
+
+.w-32{
+  width: 8rem;
 }
 
 .w-4{
@@ -1030,14 +1046,6 @@ video {
 
 .p-8{
   padding: 2rem;
-}
-
-.p-10{
-  padding: 2.5rem;
-}
-
-.\!p-10{
-  padding: 2.5rem !important;
 }
 
 .px-2{
@@ -1343,18 +1351,6 @@ header.activeHeader{
   }
 }
 
-.swiper{
-  height: 100%;
-  width: 100%;
-}
-
-.swiper-slide {
-  background: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .placeholder\:text-gray-400::-moz-placeholder{
   --tw-text-opacity: 1;
   color: rgb(156 163 175 / var(--tw-text-opacity));
@@ -1491,6 +1487,10 @@ header.activeHeader{
 }
 
 @media (min-width: 1024px){
+  .lg\:col-span-4{
+    grid-column: span 4 / span 4;
+  }
+
   .lg\:max-w-full{
     max-width: 100%;
   }
@@ -1660,6 +1660,10 @@ header.activeHeader{
 
 .\[\&\>div\]\:col-span-full>div{
   grid-column: 1 / -1;
+}
+
+.\[\&\>div\]\:h-full>div{
+  height: 100%;
 }
 
 .\[\&\>div\]\:overflow-hidden>div{

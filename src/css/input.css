@@ -42,14 +42,3 @@ header.activeHeader {
     @apply content-['"'] !text-xl font-medium italic;
   }
 }
-
-.swiper {
-  @apply h-full w-full;
-}
-
-.swiper-slide {
-  background: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
