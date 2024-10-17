@@ -39,3 +39,10 @@ bookingForm.addEventListener('submit', (e) => {
     window.open(`https://wa.me/688214535126/?text=${text}`, '_blank')
 
 })
+
+
+const itemSlider = document.querySelector('.itemSlider');
+const containerSwipper = document.querySelector('.containerSwipper');
+setTimeout(() => {
+    containerSwipper.style.height = `${itemSlider.clientHeight + 50}px`
+}, 50);

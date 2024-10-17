@@ -1048,6 +1048,10 @@ video {
   padding: 2rem;
 }
 
+.p-10{
+  padding: 2.5rem;
+}
+
 .px-2{
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -1681,6 +1685,19 @@ header.activeHeader{
 .\[\&\>div\]\:bg-white>div{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.\[\&\>div\]\:p-10>div{
+  padding: 2.5rem;
+}
+
+.\[\&\>div\]\:px-10>div{
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+.\[\&\>div\]\:pb-28>div{
+  padding-bottom: 7rem;
 }
 
 .\[\&\>div\]\:shadow-xl>div{

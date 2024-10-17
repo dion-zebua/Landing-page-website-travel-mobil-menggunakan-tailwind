@@ -936,12 +936,13 @@
               </div>
             </div>
           </div> -->
-          <div class="[&>div]:h-full h-80">
+          <div
+            class="[&>div]:h-full [&>div]:px-10 [&>div]:pb-28 containerSwipper">
             <div class="swiper mySwiper">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <div
-                    class="shadow-2xl p-5 border rounded-xl col-span-full sm:col-span-6 lg:col-span-4">
+                    class="itemSlider shadow-2xl p-5 border rounded-xl col-span-full sm:col-span-6 lg:col-span-4">
                     <div class="flex">
                       <img
                         src="./src/img/star.png"
@@ -982,7 +983,7 @@
                 </div>
                 <div class="swiper-slide">
                   <div
-                    class="shadow-2xl p-5 border rounded-xl col-span-full sm:col-span-6 lg:col-span-4">
+                    class="itemSlider shadow-2xl p-5 border rounded-xl col-span-full sm:col-span-6 lg:col-span-4">
                     <div class="flex">
                       <img
                         src="./src/img/star.png"
@@ -1023,7 +1024,47 @@
                 </div>
                 <div class="swiper-slide">
                   <div
-                    class="shadow-2xl p-5 border rounded-xl col-span-full sm:col-span-6 lg:col-span-4">
+                    class="itemSlider shadow-2xl p-5 border rounded-xl col-span-full sm:col-span-6 lg:col-span-4">
+                    <div class="flex">
+                      <img
+                        src="./src/img/star.png"
+                        alt="bintang"
+                        class="w-4" />
+                      <img
+                        src="./src/img/star.png"
+                        alt="bintang"
+                        class="w-4" />
+                      <img
+                        src="./src/img/star.png"
+                        alt="bintang"
+                        class="w-4" />
+                      <img
+                        src="./src/img/star.png"
+                        alt="bintang"
+                        class="w-4" />
+                      <img
+                        src="./src/img/star.png"
+                        alt="bintang"
+                        class="w-4" />
+                    </div>
+                    <p class="text-slate-500 text-[15px] my-5 testimoni-text">
+                      Perjalanan Surabaya-Malang sangat nyaman, armada bersih, sopir ramah. Proses pemesanan mudah dan harga terjangkau. Sangat direkomendasikan!
+                    </p>
+                    <div class="flex gap-x-4">
+                      <img
+                        src="./src/img/group.png"
+                        alt="testimoni"
+                        class="w-10 border rounded-3xl p-1 bg-gradient-to-r from-blue-600 to-blue-900" />
+                      <div class="flex flex-col justify-center">
+                        <p class="font-semibold text-sm">Irfans </p>
+                        <p class="text-slate-500 text-xs">Web Developer</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div
+                    class="itemSlider shadow-2xl p-5 border rounded-xl col-span-full sm:col-span-6 lg:col-span-4">
                     <div class="flex">
                       <img
                         src="./src/img/star.png"
@@ -1064,7 +1105,7 @@
                 </div>
                 <div class="swiper-slide">
                   <div
-                    class="shadow-2xl p-5 border rounded-xl col-span-full sm:col-span-6 lg:col-span-4">
+                    class="itemSlider shadow-2xl p-5 border rounded-xl col-span-full sm:col-span-6 lg:col-span-4">
                     <div class="flex">
                       <img
                         src="./src/img/star.png"
@@ -1105,7 +1146,7 @@
                 </div>
                 <div class="swiper-slide">
                   <div
-                    class="shadow-2xl p-5 border rounded-xl col-span-full sm:col-span-6 lg:col-span-4">
+                    class="itemSlider shadow-2xl p-5 border rounded-xl col-span-full sm:col-span-6 lg:col-span-4">
                     <div class="flex">
                       <img
                         src="./src/img/star.png"
@@ -1173,6 +1214,8 @@
           },
         },
         loop: true,
+        grabCursor: true,
+        centeredSlides: true,
         spaceBetween: 30,
         freeMode: true,
         autoplay: {
