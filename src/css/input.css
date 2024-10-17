@@ -11,17 +11,17 @@
 } */
 
 .container {
-    @apply max-w-[1200px] mx-auto px-5 py-3;
+  @apply max-w-[1200px] mx-auto px-5 py-3;
 }
 .inner-container {
-    @apply max-w-[650px] mx-auto;
+  @apply max-w-[650px] mx-auto;
 }
 
 h2 {
   @apply font-medium text-2xl;
 }
 h3 {
-  @apply font-medium text-xl ;
+  @apply font-medium text-xl;
 }
 
 .line-h2 {
@@ -30,4 +30,7 @@ h3 {
 
 p.desc {
   @apply text-slate-500 mb-10;
+}
+header.activeHeader {
+  @apply fixed top-0 bg-slate-50/90 backdrop-blur-[6px] border-b shadow-sm !z-[100];
 }

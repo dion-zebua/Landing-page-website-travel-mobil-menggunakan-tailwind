@@ -1,13 +1,23 @@
+const header = document.querySelector('header')
+window.onscroll = () => {
+    if (window.scrollY > 100) {
+        header.classList.add('activeHeader')
+    } else {
+        header.classList.remove('activeHeader')
+    }
+
+}
+
 const openNav = document.querySelector('#openNav')
 const closeNav = document.querySelector('#closeNav')
 const popupNav = document.querySelector('#popupNav')
 
-openNav.addEventListener('click', function () {
+openNav.addEventListener('click', () => {
     popupNav.classList.remove('!hidden')
     document.body.classList.add('!overflow-hidden')
 })
 
-closeNav.addEventListener('click', function () {
+closeNav.addEventListener('click', () => {
     popupNav.classList.add('!hidden')
     document.body.classList.remove('!overflow-hidden')
 })
@@ -15,7 +25,7 @@ closeNav.addEventListener('click', function () {
 
 
 const bookingForm = document.querySelector('#bookingForm')
-bookingForm.addEventListener('submit', function (e) {
+bookingForm.addEventListener('submit', (e) => {
     e.preventDefault()
 
     const data = {
@@ -26,6 +36,6 @@ bookingForm.addEventListener('submit', function (e) {
     }
 
     const text = `Saya ingin memesan travel!%0A%0A*Nama* : ${data.nama}%0A*Asal* : ${data.asal}%0A*Tujuan* : ${data.tujuan}%0A*Jumlah* : ${data.jumlah}`
-    window.open(`https://wa.me/688214535126/?text=${text}` , '_blank')
+    window.open(`https://wa.me/688214535126/?text=${text}`, '_blank')
 
 })

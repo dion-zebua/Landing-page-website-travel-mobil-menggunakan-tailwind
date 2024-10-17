@@ -42,6 +42,7 @@
                   d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
               </svg>
             </button>
+            <!-- laptop -->
             <ul
               class="hidden md:flex flex-col md:flex-row gap-8 lg:gap-11 [&_li]:flex [&_li]:items-center [&_li_a]:font-medium [&_li_a]:text-slate-700 hover:[&_li_a]:text-blue-600 hover:[&_li]:scale-110 hover:[&_li]:transition-all">
               <li><a href="#">Home</a></li>
@@ -66,11 +67,14 @@
                 Pesan
               </a>
             </ul>
+            <!-- laptop -->
+
+            <!-- mobile -->
             <ul
-              class="absolute inset-0 py-20 px-5 z-20 bg-slate-950/90 md:hidden !hidden"
+              class="fixed h-screen inset-0 py-20 px-5 z-20 bg-slate-950/90 md:hidden !hidden"
               id="popupNav">
               <div
-                class="bg-white rounded flex p-5 flex-col md:flex-row gap-4 [&_li]:flex [&_li]:items-center [&_li_a]:font-medium [&_li_a]:text-slate-700 hover:[&_li_a]:text-blue-600 hover:[&_li]:transition-all hover:[&_li_a]:scale-110 relative">
+                class="bg-white h-full rounded flex p-5 flex-col md:flex-row gap-5 [&_li]:flex [&_li]:items-center [&_li_a]:font-medium [&_li_a]:text-slate-700 hover:[&_li_a]:text-blue-600 hover:[&_li]:transition-all hover:[&_li_a]:scale-110 relative">
                 <button
                   title="close nav"
                   id="closeNav"
@@ -112,6 +116,7 @@
                 </a>
               </div>
             </ul>
+            <!-- mobile -->
           </nav>
         </div>
       </div>
@@ -160,7 +165,7 @@
                 </a>
                 <a
                   href="#"
-                  class="flex gap-2 px-5 py-2 border-2 border-blue-600 bg-slate-950/30 hover:bg-blue-600 text-slate-50 rounded-lg w-min top-0 hover:top-2 transition-all duration-700 relative">
+                  class="flex gap-2 px-5 py-2 border-2 border-slate-200 hover:border-blue-600 bg-slate-200 hover:bg-blue-600 text-slate-600 hover:text-slate-200 rounded-lg w-min top-0 hover:top-2 transition-all duration-700 relative">
                   <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                     stroke-width="1.5" stroke="currentColor" class="size-6">
                                     <path stroke-linecap="round" stroke-linejoin="round"
@@ -288,12 +293,12 @@
           <div class="text-center inner-container">
             <h2 class="line-h2">Kota Populer</h2>
             <p class="desc">
-             Kunjungi kota-kota terkenal bersama kami, nikmati pengalaman travel yang tak terlupakan dan menyenangkan!
+              Kunjungi kota-kota terkenal bersama kami, nikmati pengalaman
+              travel yang tak terlupakan dan menyenangkan!
             </p>
           </div>
           <div
-            class="grid grid-cols-4 gap-x-6 gap-y-10 [&>*]:col-span-full [&>*]:sm:col-span-2 [&>*]:lg:col-span-1 [&>*]:border [&>*]:relative [&>*]:min-h-96 md:[&>*]:min-h-80 [&>*]:rounded-xl [&>*]:shadow-xl [&>*]:cursor-pointer [&>*]:overflow-hidden [&>*]:before:absolute [&>*]:before:content-[''] [&>*]:before:z-[2] [&>*]:before:inset-0 [&>*]:before:bg-slate-950/55 [&_img]:w-full [&_img]:h-full [&_img]:object-cover [&_img]:absolute [&_img]:inset-0 [&_img]:scale-100 [&_img]:transition-all [&_img]:duration-500 [&>div>div]:z-10 [&>div>div]:relative [&>div>div]:p-5 [&>div>div]:text-center [&>div>div]:flex-col [&>div>div]:flex [&>div>div]:justify-between [&>div>div]:h-full [&_h3]:text-slate-50 
-            [&_a]:col-span-full [&_a]:px-5 [&_a]:py-2 [&_a]:border-2 [&_a]:border-blue-800 hover:[&_a]:border-blue-600 [&_a]:bg-blue-800 hover:[&_a]:bg-blue-600 [&_a]:text-slate-200 [&_a]:rounded-lg [&_a]:transition-all [&_a]:relative">
+            class="grid grid-cols-4 gap-x-6 gap-y-10 [&>*]:col-span-full [&>*]:sm:col-span-2 [&>*]:lg:col-span-1 [&>*]:border [&>*]:relative [&>*]:min-h-96 md:[&>*]:min-h-80 [&>*]:rounded-xl [&>*]:shadow-xl [&>*]:cursor-pointer [&>*]:overflow-hidden [&>*]:before:absolute [&>*]:before:content-[''] [&>*]:before:z-[2] [&>*]:before:inset-0 [&>*]:before:bg-slate-950/55 [&_img]:w-full [&_img]:h-full [&_img]:object-cover [&_img]:absolute [&_img]:inset-0 [&_img]:scale-100 [&_img]:transition-all [&_img]:duration-500 [&>div>div]:z-10 [&>div>div]:relative [&>div>div]:p-5 [&>div>div]:text-center [&>div>div]:flex-col [&>div>div]:flex [&>div>div]:justify-between [&>div>div]:h-full [&_h3]:text-slate-50 [&_a]:col-span-full [&_a]:px-5 [&_a]:py-2 [&_a]:border-2 [&_a]:border-blue-800 hover:[&_a]:border-blue-600 [&_a]:bg-blue-800 hover:[&_a]:bg-blue-600 [&_a]:text-slate-200 [&_a]:rounded-lg [&_a]:transition-all [&_a]:relative">
             <div class="group">
               <img
                 src="./src/img/place/surabaya.jpg"
@@ -356,9 +361,9 @@
       <!-- About Us -->
 
       <!-- Rute Travel -->
-       <section class="bg-blue-50 my-20">
-            <div class="container min-h-[1000px]"></div>
-       </section>
+      <section class="bg-blue-50 my-20">
+        <div class="container min-h-[1000px]"></div>
+      </section>
       <!-- Rute Travel -->
     </main>
 
