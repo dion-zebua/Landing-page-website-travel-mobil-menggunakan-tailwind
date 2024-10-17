@@ -15,86 +15,39 @@
   </head>
 
   <body class="font-poppins text-slate-700">
-    <header class="container">
-      <div class="flex justify-between py-2">
-        <div class="grid place-items-center">
-          <img
-            src="./src/img/logo-travel.png"
-            class="w-28 m-auto"
-            alt="logo" />
-        </div>
-        <div class="flex items-center">
-          <nav>
-            <button
-              title="open nav"
-              id="openNav"
-              class="bg-blue-800 hover:bg-blue-600 p-1 rounded md:hidden">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="size-6 stroke-slate-100 hover:stroke-slate-200">
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-              </svg>
-            </button>
-            <!-- laptop -->
-            <ul
-              class="hidden md:flex flex-col md:flex-row gap-8 lg:gap-11 [&_li]:flex [&_li]:items-center [&_li_a]:font-medium [&_li_a]:text-slate-700 hover:[&_li_a]:text-blue-600 hover:[&_li]:scale-110 hover:[&_li]:transition-all">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Rute Travel</a></li>
-              <li><a href="#">Galeri</a></li>
-              <li><a href="#">Kontak</a></li>
-              <a
-                href="#"
-                class="flex gap-2 px-5 py-2 bg-blue-800 hover:bg-blue-600 text-slate-200 rounded-lg w-min">
+    <header class="">
+      <div class="container">
+        <div class="flex justify-between py-2">
+          <div class="grid place-items-center">
+            <img
+              src="./src/img/logo-travel.png"
+              class="w-28 m-auto"
+              alt="logo" />
+          </div>
+          <div class="flex items-center">
+            <nav>
+              <button
+                title="open nav"
+                id="openNav"
+                class="bg-blue-800 hover:bg-blue-600 p-1 rounded md:hidden">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke-width="1.5"
                   stroke="currentColor"
-                  class="size-6">
+                  class="size-6 stroke-slate-100 hover:stroke-slate-200">
                   <path
                     stroke-linecap="round"
                     stroke-linejoin="round"
-                    d="M8.625 12a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H8.25m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H12m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 0 1-2.555-.337A5.972 5.972 0 0 1 5.41 20.97a5.969 5.969 0 0 1-.474-.065 4.48 4.48 0 0 0 .978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25Z" />
+                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                 </svg>
-                Pesan
-              </a>
-            </ul>
-            <!-- laptop -->
-
-            <!-- mobile -->
-            <ul
-              class="fixed h-screen inset-0 py-20 px-5 z-20 bg-slate-950/90 md:hidden !hidden"
-              id="popupNav">
-              <div
-                class="bg-white h-full rounded flex p-5 flex-col md:flex-row gap-5 [&_li]:flex [&_li]:items-center [&_li_a]:font-medium [&_li_a]:text-slate-700 hover:[&_li_a]:text-blue-600 hover:[&_li]:transition-all hover:[&_li_a]:scale-110 relative">
-                <button
-                  title="close nav"
-                  id="closeNav"
-                  class="absolute right-5 top-5 bg-blue-800 hover:bg-blue-600 p-1 rounded md:hidden">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="currentColor"
-                    class="size-6 stroke-slate-100 hover:stroke-slate-200">
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M6 18 18 6M6 6l12 12" />
-                  </svg>
-                </button>
-
+              </button>
+              <!-- laptop -->
+              <ul
+                class="hidden md:flex flex-col md:flex-row gap-8 lg:gap-11 [&_li]:flex [&_li]:items-center [&_li_a]:font-medium [&_li_a]:text-slate-700 hover:[&_li_a]:text-blue-600 hover:[&_li]:scale-110 hover:[&_li]:transition-all">
                 <li><a href="#">Home</a></li>
-                <li><a href="#">Rute Travel</a></li>
+                <li><a href="#rute-travel">Rute Travel</a></li>
                 <li><a href="#">Galeri</a></li>
                 <li><a href="#">Kontak</a></li>
                 <a
@@ -114,10 +67,59 @@
                   </svg>
                   Pesan
                 </a>
-              </div>
-            </ul>
-            <!-- mobile -->
-          </nav>
+              </ul>
+              <!-- laptop -->
+
+              <!-- mobile -->
+              <ul
+                class="fixed h-screen inset-0 py-20 px-5 z-20 bg-slate-950/90 md:hidden !hidden"
+                id="popupNav">
+                <div
+                  class="bg-white h-full rounded flex p-5 flex-col md:flex-row gap-5 [&_li]:flex [&_li]:items-center [&_li_a]:font-medium [&_li_a]:text-slate-700 hover:[&_li_a]:text-blue-600 hover:[&_li]:transition-all hover:[&_li_a]:scale-110 relative">
+                  <button
+                    title="close nav"
+                    id="closeNav"
+                    class="absolute right-5 top-5 bg-blue-800 hover:bg-blue-600 p-1 rounded md:hidden">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="size-6 stroke-slate-100 hover:stroke-slate-200">
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M6 18 18 6M6 6l12 12" />
+                    </svg>
+                  </button>
+
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#rute-travel">Rute Travel</a></li>
+                  <li><a href="#">Galeri</a></li>
+                  <li><a href="#">Kontak</a></li>
+                  <a
+                    href="#"
+                    class="flex gap-2 px-5 py-2 bg-blue-800 hover:bg-blue-600 text-slate-200 rounded-lg w-min">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="size-6">
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M8.625 12a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H8.25m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H12m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 0 1-2.555-.337A5.972 5.972 0 0 1 5.41 20.97a5.969 5.969 0 0 1-.474-.065 4.48 4.48 0 0 0 .978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25Z" />
+                    </svg>
+                    Pesan
+                  </a>
+                </div>
+              </ul>
+              <!-- mobile -->
+            </nav>
+          </div>
         </div>
       </div>
     </header>
@@ -165,7 +167,7 @@
                 </a>
                 <a
                   href="#"
-                  class="flex gap-2 px-5 py-2 border-2 border-slate-200 hover:border-blue-600 bg-slate-200 hover:bg-blue-600 text-slate-600 hover:text-slate-200 rounded-lg w-min top-0 hover:top-2 transition-all duration-700 relative">
+                  class="flex gap-2 px-5 py-2 border-2 border-slate-200 hover:border-blue-600 bg-slate-200 hover:bg-blue-600 text-slate-800 hover:text-slate-200 rounded-lg w-min top-0 hover:top-2 transition-all duration-700 relative">
                   <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                     stroke-width="1.5" stroke="currentColor" class="size-6">
                                     <path stroke-linecap="round" stroke-linejoin="round"
@@ -287,7 +289,7 @@
       </section>
       <!-- Hero Section -->
 
-      <!-- About Us -->
+      <!-- Kota Populer -->
       <section class="container my-20">
         <div class="">
           <div class="text-center inner-container">
@@ -358,13 +360,510 @@
           </div>
         </div>
       </section>
-      <!-- About Us -->
+      <!-- Kota Populer -->
 
       <!-- Rute Travel -->
-      <section class="bg-blue-50 my-20">
-        <div class="container min-h-[1000px]"></div>
+      <section
+        class="bg-blue-50 my-20 py-20"
+        id="rute-travel">
+        <div class="container">
+          <div class="">
+            <div class="text-center inner-container">
+              <h2 class="line-h2">Rute Travel</h2>
+              <p class="desc">
+                Kunjungi kota-kota terkenal bersama kami, nikmati pengalaman
+                travel yang tak terlupakan dan menyenangkan!
+              </p>
+            </div>
+            <div
+              class="grid grid-cols-12 gap-x-5 gap-y-7 [&>div]:col-span-6 [&>div]:sm:col-span-4 [&>div]:md:col-span-3 [&>div]:lg:col-span-2 [&>div]:rounded-xl [&>div]:border [&>div]:shadow-xl [&>div]:overflow-hidden [&>div]:bg-white [&>div]:relative [&_a]:absolute [&_a]:inset-0 [&_img]:border-b [&>div_div]:p-4 [&>div_div]:md:px-5 [&>div_div]:lg:px-6 [&_h3]:line-clamp-2 [&_h3]:text-sm [&_h3]:text-slate-700 hover:[&_h3]:text-blue-600 [&_h3]:z-10 [&_h3]:relative [&_h3]:cursor-pointer [&_svg]:size-4 [&_svg]:mx-2 [&_svg]:py-0.5 [&_svg]:inline-block">
+              <div class="">
+                <a
+                  href="#!"
+                  class=""></a>
+                <img
+                  src="./src/img/rute-travel.jpg"
+                  alt="rute travel"
+                  class="" />
+                <div class="">
+                  <h3 class="">
+                    Travel Surabaya Bali
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="">
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M7.5 21 3 16.5m0 0L7.5 12M3 16.5h13.5m0-13.5L21 7.5m0 0L16.5 12M21 7.5H7.5" />
+                    </svg>
+                  </h3>
+                </div>
+              </div>
+              <div class="">
+                <a
+                  href="#!"
+                  class=""></a>
+                <img
+                  src="./src/img/rute-travel.jpg"
+                  alt="rute travel"
+                  class="" />
+                <div class="">
+                  <h3 class="">
+                    Travel Surabaya Bali
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="">
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M7.5 21 3 16.5m0 0L7.5 12M3 16.5h13.5m0-13.5L21 7.5m0 0L16.5 12M21 7.5H7.5" />
+                    </svg>
+                  </h3>
+                </div>
+              </div>
+              <div class="">
+                <a
+                  href="#!"
+                  class=""></a>
+                <img
+                  src="./src/img/rute-travel.jpg"
+                  alt="rute travel"
+                  class="" />
+                <div class="">
+                  <h3 class="">
+                    Travel Surabaya Bali
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="">
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M7.5 21 3 16.5m0 0L7.5 12M3 16.5h13.5m0-13.5L21 7.5m0 0L16.5 12M21 7.5H7.5" />
+                    </svg>
+                  </h3>
+                </div>
+              </div>
+              <div class="">
+                <a
+                  href="#!"
+                  class=""></a>
+                <img
+                  src="./src/img/rute-travel.jpg"
+                  alt="rute travel"
+                  class="" />
+                <div class="">
+                  <h3 class="">
+                    Travel Surabaya Bali
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="">
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M7.5 21 3 16.5m0 0L7.5 12M3 16.5h13.5m0-13.5L21 7.5m0 0L16.5 12M21 7.5H7.5" />
+                    </svg>
+                  </h3>
+                </div>
+              </div>
+              <div class="">
+                <a
+                  href="#!"
+                  class=""></a>
+                <img
+                  src="./src/img/rute-travel.jpg"
+                  alt="rute travel"
+                  class="" />
+                <div class="">
+                  <h3 class="">
+                    Travel Surabaya Bali
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="">
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M7.5 21 3 16.5m0 0L7.5 12M3 16.5h13.5m0-13.5L21 7.5m0 0L16.5 12M21 7.5H7.5" />
+                    </svg>
+                  </h3>
+                </div>
+              </div>
+              <div class="">
+                <a
+                  href="#!"
+                  class=""></a>
+                <img
+                  src="./src/img/rute-travel.jpg"
+                  alt="rute travel"
+                  class="" />
+                <div class="">
+                  <h3 class="">
+                    Travel Surabaya Bali
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="">
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M7.5 21 3 16.5m0 0L7.5 12M3 16.5h13.5m0-13.5L21 7.5m0 0L16.5 12M21 7.5H7.5" />
+                    </svg>
+                  </h3>
+                </div>
+              </div>
+              <div class="">
+                <a
+                  href="#!"
+                  class=""></a>
+                <img
+                  src="./src/img/rute-travel.jpg"
+                  alt="rute travel"
+                  class="" />
+                <div class="">
+                  <h3 class="">
+                    Travel Surabaya Bali
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="">
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M7.5 21 3 16.5m0 0L7.5 12M3 16.5h13.5m0-13.5L21 7.5m0 0L16.5 12M21 7.5H7.5" />
+                    </svg>
+                  </h3>
+                </div>
+              </div>
+              <div class="">
+                <a
+                  href="#!"
+                  class=""></a>
+                <img
+                  src="./src/img/rute-travel.jpg"
+                  alt="rute travel"
+                  class="" />
+                <div class="">
+                  <h3 class="">
+                    Travel Surabaya Bali
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="">
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M7.5 21 3 16.5m0 0L7.5 12M3 16.5h13.5m0-13.5L21 7.5m0 0L16.5 12M21 7.5H7.5" />
+                    </svg>
+                  </h3>
+                </div>
+              </div>
+              <div class="">
+                <a
+                  href="#!"
+                  class=""></a>
+                <img
+                  src="./src/img/rute-travel.jpg"
+                  alt="rute travel"
+                  class="" />
+                <div class="">
+                  <h3 class="">
+                    Travel Surabaya Bali
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="">
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M7.5 21 3 16.5m0 0L7.5 12M3 16.5h13.5m0-13.5L21 7.5m0 0L16.5 12M21 7.5H7.5" />
+                    </svg>
+                  </h3>
+                </div>
+              </div>
+              <div class="">
+                <a
+                  href="#!"
+                  class=""></a>
+                <img
+                  src="./src/img/rute-travel.jpg"
+                  alt="rute travel"
+                  class="" />
+                <div class="">
+                  <h3 class="">
+                    Travel Surabaya Bali
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="">
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M7.5 21 3 16.5m0 0L7.5 12M3 16.5h13.5m0-13.5L21 7.5m0 0L16.5 12M21 7.5H7.5" />
+                    </svg>
+                  </h3>
+                </div>
+              </div>
+              <div class="">
+                <a
+                  href="#!"
+                  class=""></a>
+                <img
+                  src="./src/img/rute-travel.jpg"
+                  alt="rute travel"
+                  class="" />
+                <div class="">
+                  <h3 class="">
+                    Travel Surabaya Bali
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="">
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M7.5 21 3 16.5m0 0L7.5 12M3 16.5h13.5m0-13.5L21 7.5m0 0L16.5 12M21 7.5H7.5" />
+                    </svg>
+                  </h3>
+                </div>
+              </div>
+              <div class="">
+                <a
+                  href="#!"
+                  class=""></a>
+                <img
+                  src="./src/img/rute-travel.jpg"
+                  alt="rute travel"
+                  class="" />
+                <div class="">
+                  <h3 class="">
+                    Travel Surabaya Bali
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="">
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M7.5 21 3 16.5m0 0L7.5 12M3 16.5h13.5m0-13.5L21 7.5m0 0L16.5 12M21 7.5H7.5" />
+                    </svg>
+                  </h3>
+                </div>
+              </div>
+              <div class="">
+                <a
+                  href="#!"
+                  class=""></a>
+                <img
+                  src="./src/img/rute-travel.jpg"
+                  alt="rute travel"
+                  class="" />
+                <div class="">
+                  <h3 class="">
+                    Travel Surabaya Bali
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="">
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M7.5 21 3 16.5m0 0L7.5 12M3 16.5h13.5m0-13.5L21 7.5m0 0L16.5 12M21 7.5H7.5" />
+                    </svg>
+                  </h3>
+                </div>
+              </div>
+              <div class="">
+                <a
+                  href="#!"
+                  class=""></a>
+                <img
+                  src="./src/img/rute-travel.jpg"
+                  alt="rute travel"
+                  class="" />
+                <div class="">
+                  <h3 class="">
+                    Travel Surabaya Bali
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="">
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M7.5 21 3 16.5m0 0L7.5 12M3 16.5h13.5m0-13.5L21 7.5m0 0L16.5 12M21 7.5H7.5" />
+                    </svg>
+                  </h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
       <!-- Rute Travel -->
+
+      <!-- CTA -->
+      <section class="container my-20">
+        <div class="w-full">
+          <div
+            class="bg-indigo-700 rounded-3xl p-8 text-center sm:p-16 md:px-24 md:py-20 lg:px-28">
+            <div class="max-w-2xl mx-auto">
+              <h2 class="text-white text-4xl">
+                Ingin merencanakan perjalanan travel segera?
+              </h2>
+              <p
+                class="max-w-lg text-base text-indigo-100 mx-auto mt-4 sm:text-lg">
+                Hubungi kami dan konsultasikan kebutuhan anda, kami siap
+                membantu anda 24 jam.
+              </p>
+            </div>
+            <div
+              class="flex flex-col justify-center gap-4 mt-8 sm:flex-row sm:items-center sm:gap-5">
+              <a
+                href="#"
+                class="flex gap-2 px-5 py-2 border-2 border-slate-200 hover:border-blue-600 bg-white hover:bg-blue-600 text-slate-700 hover:text-slate-200 rounded-lg w-min top-0 hover:top-2 transition-all duration-700 relative">
+                Pesan
+              </a>
+              <a
+                href="#"
+                class="flex gap-2 px-5 py-2 border-2 border-slate-200 hover:border-blue-600 bg-transparent hover:bg-blue-600 text-slate-200 hover:text-slate-200 rounded-lg w-min top-0 hover:top-2 transition-all duration-700 relative">
+                Rute
+              </a>
+            </div>
+            <ul
+              class="flex flex-wrap items-center justify-center gap-x-6 gap-y-3 text-sm font-medium text-white mt-8">
+              <li class="inline-flex items-center gap-2">
+                <svg
+                  aria-hidden="true"
+                  class="h-5 w-5 shrink-0 text-white"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  viewBox="0 0 256 256">
+                  <path
+                    d="M176.49,95.51a12,12,0,0,1,0,17l-56,56a12,12,0,0,1-17,0l-24-24a12,12,0,1,1,17-17L112,143l47.51-47.52A12,12,0,0,1,176.49,95.51ZM236,128A108,108,0,1,1,128,20,108.12,108.12,0,0,1,236,128Zm-24,0a84,84,0,1,0-84,84A84.09,84.09,0,0,0,212,128Z"></path>
+                </svg>
+                Harga murah
+              </li>
+              <li class="inline-flex items-center gap-2">
+                <svg
+                  aria-hidden="true"
+                  class="h-5 w-5 shrink-0 text-white"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  viewBox="0 0 256 256">
+                  <path
+                    d="M176.49,95.51a12,12,0,0,1,0,17l-56,56a12,12,0,0,1-17,0l-24-24a12,12,0,1,1,17-17L112,143l47.51-47.52A12,12,0,0,1,176.49,95.51ZM236,128A108,108,0,1,1,128,20,108.12,108.12,0,0,1,236,128Zm-24,0a84,84,0,1,0-84,84A84.09,84.09,0,0,0,212,128Z"></path>
+                </svg>
+                Via tol
+              </li>
+              <li class="inline-flex items-center gap-2">
+                <svg
+                  aria-hidden="true"
+                  class="h-5 w-5 shrink-0 text-white"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  viewBox="0 0 256 256">
+                  <path
+                    d="M176.49,95.51a12,12,0,0,1,0,17l-56,56a12,12,0,0,1-17,0l-24-24a12,12,0,1,1,17-17L112,143l47.51-47.52A12,12,0,0,1,176.49,95.51ZM236,128A108,108,0,1,1,128,20,108.12,108.12,0,0,1,236,128Zm-24,0a84,84,0,1,0-84,84A84.09,84.09,0,0,0,212,128Z"></path>
+                </svg>
+                Support 24 jam
+              </li>
+              <li class="inline-flex items-center gap-2">
+                <svg
+                  aria-hidden="true"
+                  class="h-5 w-5 shrink-0 text-white"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  viewBox="0 0 256 256">
+                  <path
+                    d="M176.49,95.51a12,12,0,0,1,0,17l-56,56a12,12,0,0,1-17,0l-24-24a12,12,0,1,1,17-17L112,143l47.51-47.52A12,12,0,0,1,176.49,95.51ZM236,128A108,108,0,1,1,128,20,108.12,108.12,0,0,1,236,128Zm-24,0a84,84,0,1,0-84,84A84.09,84.09,0,0,0,212,128Z"></path>
+                </svg>
+                Mobil ber-ac
+              </li>
+              <li class="inline-flex items-center gap-2">
+                <svg
+                  aria-hidden="true"
+                  class="h-5 w-5 shrink-0 text-white"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  viewBox="0 0 256 256">
+                  <path
+                    d="M176.49,95.51a12,12,0,0,1,0,17l-56,56a12,12,0,0,1-17,0l-24-24a12,12,0,1,1,17-17L112,143l47.51-47.52A12,12,0,0,1,176.49,95.51ZM236,128A108,108,0,1,1,128,20,108.12,108.12,0,0,1,236,128Zm-24,0a84,84,0,1,0-84,84A84.09,84.09,0,0,0,212,128Z"></path>
+                </svg>
+                Door to door
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- CTA -->
+
+      <!-- Galeri -->
+      <section
+        class="bg-blue-50 my-20 py-20"
+        id="galeri">
+        <div class="container">
+          <div class="">
+            <div class="text-center inner-container">
+              <h2 class="line-h2">Galeri Travel</h2>
+              <p class="desc">
+                Galeri ini menampilkan berbagai unit, foto, dan momen berharga yang merefleksikan perjalanan kami.
+              </p>
+            </div>
+            <div class="grid grid-cols-12 [&>*]:overflow-hidden">
+              <div class="">
+                <img src="" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Galeri -->
     </main>
 
     <script src="./src/js/script.js"></script>

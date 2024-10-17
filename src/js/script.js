@@ -1,6 +1,6 @@
 const header = document.querySelector('header')
 window.onscroll = () => {
-    if (window.scrollY > 100) {
+    if (window.scrollY > 200) {
         header.classList.add('activeHeader')
     } else {
         header.classList.remove('activeHeader')

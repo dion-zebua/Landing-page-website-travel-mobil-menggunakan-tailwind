@@ -18,10 +18,10 @@
 }
 
 h2 {
-  @apply font-medium text-2xl;
+  @apply font-medium text-2xl capitalize;
 }
 h3 {
-  @apply font-medium text-xl;
+  @apply font-medium text-xl capitalize;
 }
 
 .line-h2 {
@@ -32,5 +32,5 @@ p.desc {
   @apply text-slate-500 mb-10;
 }
 header.activeHeader {
-  @apply fixed top-0 bg-slate-50/90 backdrop-blur-[6px] border-b shadow-sm !z-[100];
+  @apply fixed top-0 bg-slate-50/90 backdrop-blur-[6px] border-b shadow-sm !z-[100] w-full;
 }
