@@ -41,8 +41,11 @@ bookingForm.addEventListener('submit', (e) => {
 })
 
 
-const itemSlider = document.querySelector('.itemSlider');
+const itemSlider = document.querySelectorAll('.itemSlider');
 const containerSwipper = document.querySelector('.containerSwipper');
 setTimeout(() => {
+    itemSlider.forEach((e) => {})
+    // console.log(e.clientHeight);
+    // e.style.height = '300px'
     containerSwipper.style.height = `${itemSlider.clientHeight + 50}px`
 }, 50);
