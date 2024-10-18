@@ -741,12 +741,12 @@ video {
   width: 2.5rem;
 }
 
-.w-28 {
-  width: 7rem;
+.w-24 {
+  width: 6rem;
 }
 
-.w-32 {
-  width: 8rem;
+.w-28 {
+  width: 7rem;
 }
 
 .w-4 {
@@ -764,10 +764,6 @@ video {
 .w-min {
   width: -moz-min-content;
   width: min-content;
-}
-
-.w-24 {
-  width: 6rem;
 }
 
 .max-w-2xl {
@@ -1290,16 +1286,12 @@ video {
   filter: drop-shadow(0px 1px 1px white) drop-shadow(-1px -1px 1px white);
 }
 
-.\[text-shadow\:_1px_1px_0_white\2c _-1px_-1px_0_white\] {
-  text-shadow: 1px 1px 0 white, -1px -1px 0 white;
-}
-
 @font-face {
   font-family: "Poppins";
 
   font-weight: 400;
 
-  src: url("/src/font/Poppins-Regular.ttf") format("woff2");
+  src: url("./src/font/Poppins-Regular.ttf") format("woff2");
 }
 
 .container {
@@ -1563,33 +1555,12 @@ header.activeHeader {
     padding-bottom: 5rem;
   }
 
-  .md\:text-\[35px\] {
-    font-size: 35px;
-  }
-
   .md\:text-\[40px\] {
     font-size: 40px;
   }
 
-  .md\:text-5xl {
-    font-size: 3rem;
-    line-height: 1;
-  }
-
-  .md\:text-\[42px\] {
-    font-size: 42px;
-  }
-
   .md\:leading-\[50px\] {
     line-height: 50px;
-  }
-
-  .md\:text-\[5xl\] {
-    color: 5xl;
-  }
-
-  .md\:text-\[4\] {
-    color: 4;
   }
 }
 
