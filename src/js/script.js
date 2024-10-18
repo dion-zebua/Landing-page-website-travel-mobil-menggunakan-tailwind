@@ -36,17 +36,6 @@ bookingForm.addEventListener('submit', (e) => {
     }
 
     const text = `Saya ingin memesan travel!%0A%0A*Nama* : ${data.nama}%0A*Asal* : ${data.asal}%0A*Tujuan* : ${data.tujuan}%0A*Jumlah* : ${data.jumlah}`
-    window.open(`https://wa.me/688214535126/?text=${text}`, '_blank')
+    window.open(`https://wa.me/62888888888888/?text=${text}`, '_blank')
 
 })
-
-
-const itemSlider = document.querySelectorAll('.itemSlider');
-const containerSwipper = document.querySelector('.containerSwipper');
-setTimeout(() => {
-    const maxValue = Math.max(...Array.from(itemSlider, item => item.clientHeight));
-    itemSlider.forEach(e => {
-        e.style.height = `${maxValue}px`
-    })
-    containerSwipper.style.height = `${itemSlider.clientHeight}px`
-}, 50);

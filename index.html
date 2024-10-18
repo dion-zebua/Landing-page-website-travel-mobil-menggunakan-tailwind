@@ -16,18 +16,20 @@
       content="Jasa Travel" />
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+      href="./src/css/swiper-bundle.min.css" />
   </head>
 
-  <body class="font-poppins text-slate-700">
+  <body class="font-poppins text-slate-700 overflow-x-hidden">
     <header class="">
       <div class="container">
         <div class="flex justify-between py-2">
           <div class="grid place-items-center">
-            <img
-              src="./src/img/logo-travel.png"
-              class="w-28 m-auto"
-              alt="logo" />
+            <a href="./">
+              <img
+                src="./src/img/logo-travel.png"
+                class="w-28 m-auto"
+                alt="logo" />
+            </a>
           </div>
           <div class="flex items-center">
             <nav>
@@ -48,15 +50,16 @@
                     d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                 </svg>
               </button>
+
               <!-- laptop -->
               <ul
                 class="hidden md:flex flex-col md:flex-row gap-8 lg:gap-11 [&_li]:flex [&_li]:items-center [&_li_a]:font-medium [&_li_a]:text-slate-700 hover:[&_li_a]:text-blue-600 hover:[&_li]:scale-110 hover:[&_li]:transition-all">
                 <li><a href="#">Home</a></li>
                 <li><a href="#rute-travel">Rute Travel</a></li>
                 <li><a href="#galeri">Galeri</a></li>
-                <li><a href="#">Kontak</a></li>
+                <li><a href="#kontak">Kontak</a></li>
                 <a
-                  href="#"
+                  href="#!"
                   class="flex gap-2 px-5 py-2 bg-blue-800 hover:bg-blue-600 text-slate-200 rounded-lg w-min">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -102,9 +105,9 @@
                   <li><a href="#">Home</a></li>
                   <li><a href="#rute-travel">Rute Travel</a></li>
                   <li><a href="#galeri">Galeri</a></li>
-                  <li><a href="#">Kontak</a></li>
+                  <li><a href="#kontak">Kontak</a></li>
                   <a
-                    href="#"
+                    href="#!"
                     class="flex gap-2 px-5 py-2 bg-blue-800 hover:bg-blue-600 text-slate-200 rounded-lg w-min">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -153,7 +156,7 @@
               </h1>
               <div class="flex gap-x-5 mt-7">
                 <a
-                  href="#"
+                  href="#!"
                   class="flex gap-2 px-5 py-2 border-2 border-blue-800 hover:border-blue-600 bg-blue-800 hover:bg-blue-600 text-slate-200 rounded-lg w-min top-0 hover:top-2 transition-all duration-700 relative">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -170,13 +173,8 @@
                   Pesan
                 </a>
                 <a
-                  href="#"
+                  href="#!"
                   class="flex gap-2 px-5 py-2 border-2 border-slate-200 hover:border-blue-600 bg-slate-200 hover:bg-blue-600 text-slate-800 hover:text-slate-200 rounded-lg w-min top-0 hover:top-2 transition-all duration-700 relative">
-                  <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                    stroke-width="1.5" stroke="currentColor" class="size-6">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M8.625 12a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H8.25m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H12m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 0 1-2.555-.337A5.972 5.972 0 0 1 5.41 20.97a5.969 5.969 0 0 1-.474-.065 4.48 4.48 0 0 0 .978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25Z" />
-                                </svg> -->
                   Rute
                 </a>
               </div>
@@ -380,7 +378,7 @@
               </p>
             </div>
             <div
-              class="grid grid-cols-12 gap-x-5 gap-y-7 [&>div]:col-span-6 [&>div]:sm:col-span-4 [&>div]:md:col-span-3 [&>div]:lg:col-span-2 [&>div]:rounded-xl [&>div]:border [&>div]:shadow-xl [&>div]:overflow-hidden [&>div]:bg-white [&>div]:relative [&_a]:absolute [&_a]:inset-0 [&_img]:border-b [&>div_div]:p-4 [&>div_div]:md:px-5 [&>div_div]:lg:px-6 [&_h3]:line-clamp-2 [&_h3]:text-sm [&_h3]:text-slate-700 hover:[&_h3]:text-blue-600 [&_h3]:z-10 [&_h3]:relative [&_h3]:cursor-pointer [&_svg]:size-4 [&_svg]:mx-2 [&_svg]:py-0.5 [&_svg]:inline-block">
+              class="grid grid-cols-12 gap-x-5 gap-y-7 [&>div]:col-span-6 [&>div]:sm:col-span-4 [&>div]:md:col-span-3 [&>div]:lg:col-span-2 [&>div]:rounded-xl [&>div]:border [&>div]:shadow-xl [&>div]:overflow-hidden [&>div]:bg-white [&>div]:relative [&>div>a]:absolute [&>div>a]:inset-0 [&_img]:border-b [&>div_div]:p-4 [&>div_div]:md:px-5 [&>div_div]:lg:px-6 [&_h3]:line-clamp-2 [&_h3]:text-sm [&_h3]:text-slate-700 hover:[&_h3]:text-blue-600 [&_h3]:z-10 [&_h3]:relative [&_h3]:cursor-pointer [&_svg]:size-4 [&_svg]:mx-2 [&_svg]:py-0.5 [&_svg]:inline-block">
               <div class="">
                 <a
                   href="#!"
@@ -390,21 +388,23 @@
                   alt="rute travel"
                   class="" />
                 <div class="">
-                  <h3 class="">
-                    Travel Surabaya Bali
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke-width="1.5"
-                      stroke="currentColor"
-                      class="">
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M7.5 21 3 16.5m0 0L7.5 12M3 16.5h13.5m0-13.5L21 7.5m0 0L16.5 12M21 7.5H7.5" />
-                    </svg>
-                  </h3>
+                  <a href="#!">
+                    <h3 class="">
+                      Travel Surabaya Bali
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="">
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M7.5 21 3 16.5m0 0L7.5 12M3 16.5h13.5m0-13.5L21 7.5m0 0L16.5 12M21 7.5H7.5" />
+                      </svg>
+                    </h3>
+                  </a>
                 </div>
               </div>
               <div class="">
@@ -416,21 +416,23 @@
                   alt="rute travel"
                   class="" />
                 <div class="">
-                  <h3 class="">
-                    Travel Surabaya Bali
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke-width="1.5"
-                      stroke="currentColor"
-                      class="">
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M7.5 21 3 16.5m0 0L7.5 12M3 16.5h13.5m0-13.5L21 7.5m0 0L16.5 12M21 7.5H7.5" />
-                    </svg>
-                  </h3>
+                  <a href="#!">
+                    <h3 class="">
+                      Travel Surabaya Bali
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="">
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M7.5 21 3 16.5m0 0L7.5 12M3 16.5h13.5m0-13.5L21 7.5m0 0L16.5 12M21 7.5H7.5" />
+                      </svg>
+                    </h3>
+                  </a>
                 </div>
               </div>
               <div class="">
@@ -442,21 +444,23 @@
                   alt="rute travel"
                   class="" />
                 <div class="">
-                  <h3 class="">
-                    Travel Surabaya Bali
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke-width="1.5"
-                      stroke="currentColor"
-                      class="">
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M7.5 21 3 16.5m0 0L7.5 12M3 16.5h13.5m0-13.5L21 7.5m0 0L16.5 12M21 7.5H7.5" />
-                    </svg>
-                  </h3>
+                  <a href="#!">
+                    <h3 class="">
+                      Travel Surabaya Bali
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="">
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M7.5 21 3 16.5m0 0L7.5 12M3 16.5h13.5m0-13.5L21 7.5m0 0L16.5 12M21 7.5H7.5" />
+                      </svg>
+                    </h3>
+                  </a>
                 </div>
               </div>
               <div class="">
@@ -468,21 +472,23 @@
                   alt="rute travel"
                   class="" />
                 <div class="">
-                  <h3 class="">
-                    Travel Surabaya Bali
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke-width="1.5"
-                      stroke="currentColor"
-                      class="">
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M7.5 21 3 16.5m0 0L7.5 12M3 16.5h13.5m0-13.5L21 7.5m0 0L16.5 12M21 7.5H7.5" />
-                    </svg>
-                  </h3>
+                  <a href="#!">
+                    <h3 class="">
+                      Travel Surabaya Bali
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="">
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M7.5 21 3 16.5m0 0L7.5 12M3 16.5h13.5m0-13.5L21 7.5m0 0L16.5 12M21 7.5H7.5" />
+                      </svg>
+                    </h3>
+                  </a>
                 </div>
               </div>
               <div class="">
@@ -494,21 +500,23 @@
                   alt="rute travel"
                   class="" />
                 <div class="">
-                  <h3 class="">
-                    Travel Surabaya Bali
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke-width="1.5"
-                      stroke="currentColor"
-                      class="">
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M7.5 21 3 16.5m0 0L7.5 12M3 16.5h13.5m0-13.5L21 7.5m0 0L16.5 12M21 7.5H7.5" />
-                    </svg>
-                  </h3>
+                  <a href="#!">
+                    <h3 class="">
+                      Travel Surabaya Bali
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="">
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M7.5 21 3 16.5m0 0L7.5 12M3 16.5h13.5m0-13.5L21 7.5m0 0L16.5 12M21 7.5H7.5" />
+                      </svg>
+                    </h3>
+                  </a>
                 </div>
               </div>
               <div class="">
@@ -520,21 +528,23 @@
                   alt="rute travel"
                   class="" />
                 <div class="">
-                  <h3 class="">
-                    Travel Surabaya Bali
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke-width="1.5"
-                      stroke="currentColor"
-                      class="">
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M7.5 21 3 16.5m0 0L7.5 12M3 16.5h13.5m0-13.5L21 7.5m0 0L16.5 12M21 7.5H7.5" />
-                    </svg>
-                  </h3>
+                  <a href="#!">
+                    <h3 class="">
+                      Travel Surabaya Bali
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="">
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M7.5 21 3 16.5m0 0L7.5 12M3 16.5h13.5m0-13.5L21 7.5m0 0L16.5 12M21 7.5H7.5" />
+                      </svg>
+                    </h3>
+                  </a>
                 </div>
               </div>
               <div class="">
@@ -546,21 +556,23 @@
                   alt="rute travel"
                   class="" />
                 <div class="">
-                  <h3 class="">
-                    Travel Surabaya Bali
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke-width="1.5"
-                      stroke="currentColor"
-                      class="">
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M7.5 21 3 16.5m0 0L7.5 12M3 16.5h13.5m0-13.5L21 7.5m0 0L16.5 12M21 7.5H7.5" />
-                    </svg>
-                  </h3>
+                  <a href="#!">
+                    <h3 class="">
+                      Travel Surabaya Bali
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="">
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M7.5 21 3 16.5m0 0L7.5 12M3 16.5h13.5m0-13.5L21 7.5m0 0L16.5 12M21 7.5H7.5" />
+                      </svg>
+                    </h3>
+                  </a>
                 </div>
               </div>
               <div class="">
@@ -572,21 +584,23 @@
                   alt="rute travel"
                   class="" />
                 <div class="">
-                  <h3 class="">
-                    Travel Surabaya Bali
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke-width="1.5"
-                      stroke="currentColor"
-                      class="">
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M7.5 21 3 16.5m0 0L7.5 12M3 16.5h13.5m0-13.5L21 7.5m0 0L16.5 12M21 7.5H7.5" />
-                    </svg>
-                  </h3>
+                  <a href="#!">
+                    <h3 class="">
+                      Travel Surabaya Bali
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="">
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M7.5 21 3 16.5m0 0L7.5 12M3 16.5h13.5m0-13.5L21 7.5m0 0L16.5 12M21 7.5H7.5" />
+                      </svg>
+                    </h3>
+                  </a>
                 </div>
               </div>
               <div class="">
@@ -598,21 +612,23 @@
                   alt="rute travel"
                   class="" />
                 <div class="">
-                  <h3 class="">
-                    Travel Surabaya Bali
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke-width="1.5"
-                      stroke="currentColor"
-                      class="">
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M7.5 21 3 16.5m0 0L7.5 12M3 16.5h13.5m0-13.5L21 7.5m0 0L16.5 12M21 7.5H7.5" />
-                    </svg>
-                  </h3>
+                  <a href="#!">
+                    <h3 class="">
+                      Travel Surabaya Bali
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="">
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M7.5 21 3 16.5m0 0L7.5 12M3 16.5h13.5m0-13.5L21 7.5m0 0L16.5 12M21 7.5H7.5" />
+                      </svg>
+                    </h3>
+                  </a>
                 </div>
               </div>
               <div class="">
@@ -624,21 +640,23 @@
                   alt="rute travel"
                   class="" />
                 <div class="">
-                  <h3 class="">
-                    Travel Surabaya Bali
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke-width="1.5"
-                      stroke="currentColor"
-                      class="">
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M7.5 21 3 16.5m0 0L7.5 12M3 16.5h13.5m0-13.5L21 7.5m0 0L16.5 12M21 7.5H7.5" />
-                    </svg>
-                  </h3>
+                  <a href="#!">
+                    <h3 class="">
+                      Travel Surabaya Bali
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="">
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M7.5 21 3 16.5m0 0L7.5 12M3 16.5h13.5m0-13.5L21 7.5m0 0L16.5 12M21 7.5H7.5" />
+                      </svg>
+                    </h3>
+                  </a>
                 </div>
               </div>
               <div class="">
@@ -650,21 +668,23 @@
                   alt="rute travel"
                   class="" />
                 <div class="">
-                  <h3 class="">
-                    Travel Surabaya Bali
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke-width="1.5"
-                      stroke="currentColor"
-                      class="">
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M7.5 21 3 16.5m0 0L7.5 12M3 16.5h13.5m0-13.5L21 7.5m0 0L16.5 12M21 7.5H7.5" />
-                    </svg>
-                  </h3>
+                  <a href="#!">
+                    <h3 class="">
+                      Travel Surabaya Bali
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="">
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M7.5 21 3 16.5m0 0L7.5 12M3 16.5h13.5m0-13.5L21 7.5m0 0L16.5 12M21 7.5H7.5" />
+                      </svg>
+                    </h3>
+                  </a>
                 </div>
               </div>
               <div class="">
@@ -676,21 +696,23 @@
                   alt="rute travel"
                   class="" />
                 <div class="">
-                  <h3 class="">
-                    Travel Surabaya Bali
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke-width="1.5"
-                      stroke="currentColor"
-                      class="">
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M7.5 21 3 16.5m0 0L7.5 12M3 16.5h13.5m0-13.5L21 7.5m0 0L16.5 12M21 7.5H7.5" />
-                    </svg>
-                  </h3>
+                  <a href="#!">
+                    <h3 class="">
+                      Travel Surabaya Bali
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="">
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M7.5 21 3 16.5m0 0L7.5 12M3 16.5h13.5m0-13.5L21 7.5m0 0L16.5 12M21 7.5H7.5" />
+                      </svg>
+                    </h3>
+                  </a>
                 </div>
               </div>
               <!-- <div class="">
@@ -702,8 +724,11 @@
                   alt="rute travel"
                   class="" />
                 <div class="">
-                  <h3 class="">
-                    Travel Surabaya Bali
+                  <a href="#!">
+
+                    <h3 class="">
+                      Travel Surabaya Bali
+                  </a>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
@@ -728,8 +753,11 @@
                   alt="rute travel"
                   class="" />
                 <div class="">
-                  <h3 class="">
-                    Travel Surabaya Bali
+                  <a href="#!">
+
+                    <h3 class="">
+                      Travel Surabaya Bali
+                  </a>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
@@ -769,12 +797,12 @@
             <div
               class="flex justify-center gap-4 mt-8 sm:flex-row sm:items-center sm:gap-5">
               <a
-                href="#"
+                href="#!"
                 class="flex gap-2 px-5 py-2 border-2 border-slate-200 hover:border-blue-600 bg-white hover:bg-blue-600 text-slate-700 hover:text-slate-200 rounded-lg w-min top-0 hover:top-2 transition-all duration-700 relative">
                 Pesan
               </a>
               <a
-                href="#"
+                href="#!"
                 class="flex gap-2 px-5 py-2 border-2 border-slate-200 hover:border-blue-600 bg-transparent hover:bg-blue-600 text-slate-200 hover:text-slate-200 rounded-lg w-min top-0 hover:top-2 transition-all duration-700 relative">
                 Rute
               </a>
@@ -861,22 +889,22 @@
               </p>
             </div>
             <div
-              class="grid grid-cols-12 gap-x-6 gap-y-8 [&>*]:overflow-hidden">
+              class="grid grid-cols-12 sm:gap-x-6 gap-y-8 [&>*]:overflow-hidden [&>img]:cursor-pointer [&>img]:w-full [&>img]:object-cover [&>img]:rounded-xl [&>img]:shadow-lg [&>img]:h-72 [&>img]:transition-all [&>img]:duration-700 [&>img]:brightness-50 hover:[&>img]:brightness-90 [&>img]:col-span-full">
               <img
                 src="./src/img/galeri/hiace.webp"
-                class="cursor-pointer w-full object-cover rounded-xl shadow-lg h-72 transition-all duration-700 brightness-50 hover:brightness-90 col-span-full sm:col-span-6 md:col-span-8"
+                class="sm:!col-span-8"
                 alt="galeri 2" />
               <img
                 src="./src/img/galeri/avanza.jpg"
-                class="cursor-pointer w-full object-cover rounded-xl shadow-lg h-72 transition-all duration-700 brightness-50 hover:brightness-90 col-span-full sm:col-span-6 md:col-span-4"
+                class="sm:!col-span-4"
                 alt="galeri 1" />
               <img
                 src="./src/img/galeri/surabaya.webp"
-                class="cursor-pointer w-full object-cover rounded-xl shadow-lg h-72 transition-all duration-700 brightness-50 hover:brightness-90 col-span-full sm:col-span-6 md:col-span-4"
+                class="sm:!col-span-4"
                 alt="galeri 4" />
               <img
                 src="./src/img/galeri/bali.webp"
-                class="cursor-pointer w-full object-cover rounded-xl shadow-lg h-72 transition-all duration-700 brightness-50 hover:brightness-90 col-span-full sm:col-span-6 md:col-span-8"
+                class="sm:!col-span-8"
                 alt="galeri 3" />
             </div>
           </div>
@@ -894,293 +922,176 @@
               yang terbaik. Terima kasih atas kepercayaan Anda kepada kami!
             </p>
           </div>
-          <!-- <div
-            class="grid grid-cols-12 [&>*]:shadow-2xl [&>*]:p-5 [&>*]:border [&>*]:rounded-xl [&>*]:col-span-full [&>*]:sm:col-span-6 [&>*]:lg:col-span-4">
-            <div class="">
-              <div class="flex">
-                <img
-                  src="./src/img/star.png"
-                  alt="bintang"
-                  class="w-4" />
-                <img
-                  src="./src/img/star.png"
-                  alt="bintang"
-                  class="w-4" />
-                <img
-                  src="./src/img/star.png"
-                  alt="bintang"
-                  class="w-4" />
-                <img
-                  src="./src/img/star.png"
-                  alt="bintang"
-                  class="w-4" />
-                <img
-                  src="./src/img/star.png"
-                  alt="bintang"
-                  class="w-4" />
-              </div>
-              <p class="text-slate-500 text-[15px] my-5 testimoni-text">
-                Saya menggunakan jasa travel reguler dari Surabaya ke Denpasar
-                dan benar-benar puas dengan pengalamannya.
-              </p>
-              <div class="flex gap-x-4">
-                <img
-                  src="./src/img/group.png"
-                  alt="testimoni"
-                  class="w-10 border rounded-3xl p-1 bg-gradient-to-r from-blue-600 to-blue-900" />
-                <div class="flex flex-col justify-center">
-                  <p class="font-semibold text-sm">Dion Zebua</p>
-                  <p class="text-slate-500 text-xs">Web Developer</p>
-                </div>
-              </div>
-            </div>
-          </div> -->
           <div
-            class="[&>div]:h-full [&>div]:px-10 [&>div]:pb-10 containerSwipper">
+            class="[&>div]:h-full [&>div]:px-10 [&>div]:pb-10 containerSwipper [&_.itemSlider]:shadow-2xl [&_.itemSlider]:p-5 [&_.itemSlider]:border [&_.itemSlider]:rounded-xl [&_.itemSlider]:col-span-full [&_.itemSlider]:sm:col-span-6 [&_.itemSlider]:lg:col-span-4 first:[&_.itemSlider>div]:flex [&>img]:first:[&_.itemSlider>div]:w-4 [&_.testimoni]:text-slate-500 [&_.testimoni]:text-[15px] [&_.testimoni]:my-5 [&_.testimoni]:testimoni-text [&_.user-testimoni]:flex [&_.user-testimoni]:gap-x-4 [&_.user-testimoni_img]:w-10 [&_.user-testimoni_img]:border [&_.user-testimoni_img]:rounded-3xl [&_.user-testimoni_img]:p-1 [&_.user-testimoni_img]:bg-gradient-to-r [&_.user-testimoni_img]:from-blue-600 [&_.user-testimoni_img]:to-blue-900 [&_.user-testimoni_div]:flex [&_.user-testimoni_div]:flex-col [&_.user-testimoni_div]:justify-center first:[&_.user-testimoni_div_p]:font-semibold first:[&_.user-testimoni_div_p]:text-sm last:[&_.user-testimoni_div_p]:text-slate-500 last:[&_.user-testimoni_div_p]:text-xs">
             <div class="swiper mySwiper">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                  <div
-                    class="itemSlider shadow-2xl p-5 border rounded-xl col-span-full sm:col-span-6 lg:col-span-4">
-                    <div class="flex">
+                  <div class="itemSlider">
+                    <div class="">
                       <img
                         src="./src/img/star.png"
-                        alt="bintang"
-                        class="w-4" />
+                        alt="bintang" />
                       <img
                         src="./src/img/star.png"
-                        alt="bintang"
-                        class="w-4" />
+                        alt="bintang" />
                       <img
                         src="./src/img/star.png"
-                        alt="bintang"
-                        class="w-4" />
+                        alt="bintang" />
                       <img
                         src="./src/img/star.png"
-                        alt="bintang"
-                        class="w-4" />
+                        alt="bintang" />
                       <img
                         src="./src/img/star.png"
-                        alt="bintang"
-                        class="w-4" />
+                        alt="bintang" />
                     </div>
-                    <p class="text-slate-500 text-[15px] my-5 testimoni-text">
+                    <p class="testimoni">
                       Saya menggunakan jasa travel reguler dari Surabaya ke
                       Denpasar dan benar-benar puas dengan pengalamannya.
                     </p>
-                    <div class="flex gap-x-4">
+                    <div class="user-testimoni">
                       <img
                         src="./src/img/group.png"
-                        alt="testimoni"
-                        class="w-10 border rounded-3xl p-1 bg-gradient-to-r from-blue-600 to-blue-900" />
-                      <div class="flex flex-col justify-center">
-                        <p class="font-semibold text-sm">Dion Zebua</p>
-                        <p class="text-slate-500 text-xs">Web Developer</p>
+                        alt="testimoni" />
+                      <div>
+                        <p>Dion Zebua</p>
+                        <p>Web Developer</p>
                       </div>
                     </div>
                   </div>
                 </div>
                 <div class="swiper-slide">
-                  <div
-                    class="itemSlider shadow-2xl p-5 border rounded-xl col-span-full sm:col-span-6 lg:col-span-4">
-                    <div class="flex">
+                  <div class="itemSlider">
+                    <div class="">
                       <img
                         src="./src/img/star.png"
-                        alt="bintang"
-                        class="w-4" />
+                        alt="bintang" />
                       <img
                         src="./src/img/star.png"
-                        alt="bintang"
-                        class="w-4" />
+                        alt="bintang" />
                       <img
                         src="./src/img/star.png"
-                        alt="bintang"
-                        class="w-4" />
+                        alt="bintang" />
                       <img
                         src="./src/img/star.png"
-                        alt="bintang"
-                        class="w-4" />
+                        alt="bintang" />
                       <img
                         src="./src/img/star.png"
-                        alt="bintang"
-                        class="w-4" />
+                        alt="bintang" />
                     </div>
-                    <p class="text-slate-500 text-[15px] my-5 testimoni-text">
-                      Saya menggunakan jasa travel reguler dari Surabaya ke
-                      Denpasar dan benar-benar puas dengan pengalamannya.
+                    <p class="testimoni">
+                      Pelayanan juara, mobil nyaman, dapat snack, supir ramah.
+                      Terima kasih Mas Sopir. Semoga sukses selalu!
                     </p>
-                    <div class="flex gap-x-4">
+                    <div class="user-testimoni">
                       <img
                         src="./src/img/group.png"
-                        alt="testimoni"
-                        class="w-10 border rounded-3xl p-1 bg-gradient-to-r from-blue-600 to-blue-900" />
-                      <div class="flex flex-col justify-center">
-                        <p class="font-semibold text-sm">Dion Zebua</p>
-                        <p class="text-slate-500 text-xs">Web Developer</p>
+                        alt="testimoni" />
+                      <div>
+                        <p>Rina Pratiwi</p>
+                        <p>Guru</p>
                       </div>
                     </div>
                   </div>
                 </div>
                 <div class="swiper-slide">
-                  <div
-                    class="itemSlider shadow-2xl p-5 border rounded-xl col-span-full sm:col-span-6 lg:col-span-4">
-                    <div class="flex">
+                  <div class="itemSlider">
+                    <div class="">
                       <img
                         src="./src/img/star.png"
-                        alt="bintang"
-                        class="w-4" />
+                        alt="bintang" />
                       <img
                         src="./src/img/star.png"
-                        alt="bintang"
-                        class="w-4" />
+                        alt="bintang" />
                       <img
                         src="./src/img/star.png"
-                        alt="bintang"
-                        class="w-4" />
+                        alt="bintang" />
                       <img
                         src="./src/img/star.png"
-                        alt="bintang"
-                        class="w-4" />
+                        alt="bintang" />
                       <img
                         src="./src/img/star.png"
-                        alt="bintang"
-                        class="w-4" />
+                        alt="bintang" />
                     </div>
-                    <p class="text-slate-500 text-[15px] my-5 testimoni-text">
-                      Perjalanan Surabaya-Malang sangat nyaman, armada bersih,
-                      sopir ramah.
+                    <p class="testimoni">
+                      Perjalanan sangat nyaman, cara menyetir driver baik dan
+                      sikapnya ramah. Pengalaman yang menyenangkan!
                     </p>
-                    <div class="flex gap-x-4">
+                    <div class="user-testimoni">
                       <img
                         src="./src/img/group.png"
-                        alt="testimoni"
-                        class="w-10 border rounded-3xl p-1 bg-gradient-to-r from-blue-600 to-blue-900" />
-                      <div class="flex flex-col justify-center">
-                        <p class="font-semibold text-sm">Irfans</p>
-                        <p class="text-slate-500 text-xs">Mobile Dev</p>
+                        alt="testimoni" />
+                      <div>
+                        <p>Dewi Anggraini</p>
+                        <p>Ibu Rumah Tangga</p>
                       </div>
                     </div>
                   </div>
                 </div>
                 <div class="swiper-slide">
-                  <div
-                    class="itemSlider shadow-2xl p-5 border rounded-xl col-span-full sm:col-span-6 lg:col-span-4">
-                    <div class="flex">
+                  <div class="itemSlider">
+                    <div class="">
                       <img
                         src="./src/img/star.png"
-                        alt="bintang"
-                        class="w-4" />
+                        alt="bintang" />
                       <img
                         src="./src/img/star.png"
-                        alt="bintang"
-                        class="w-4" />
+                        alt="bintang" />
                       <img
                         src="./src/img/star.png"
-                        alt="bintang"
-                        class="w-4" />
+                        alt="bintang" />
                       <img
                         src="./src/img/star.png"
-                        alt="bintang"
-                        class="w-4" />
+                        alt="bintang" />
                       <img
                         src="./src/img/star.png"
-                        alt="bintang"
-                        class="w-4" />
+                        alt="bintang" />
                     </div>
-                    <p class="text-slate-500 text-[15px] my-5 testimoni-text">
-                      Saya menggunakan jasa travel reguler dari Surabaya ke
-                      Denpasar dan benar-benar puas dengan pengalamannya.
+                    <p class="testimoni">
+                      2 kali pakai travel ini, pelayanan admin bagus, respon
+                      cepat, penjemputan tepat waktu sesuai jadwal, mobil nya
+                      bagus dan bersih, driver ramah, Snack tersedia di kursi.
                     </p>
-                    <div class="flex gap-x-4">
+                    <div class="user-testimoni">
                       <img
                         src="./src/img/group.png"
-                        alt="testimoni"
-                        class="w-10 border rounded-3xl p-1 bg-gradient-to-r from-blue-600 to-blue-900" />
-                      <div class="flex flex-col justify-center">
-                        <p class="font-semibold text-sm">Dion Zebua</p>
-                        <p class="text-slate-500 text-xs">Web Developer</p>
+                        alt="testimoni" />
+                      <div>
+                        <p>Nina Sari</p>
+                        <p>Mahasiswi</p>
                       </div>
                     </div>
                   </div>
                 </div>
                 <div class="swiper-slide">
-                  <div
-                    class="itemSlider shadow-2xl p-5 border rounded-xl col-span-full sm:col-span-6 lg:col-span-4">
-                    <div class="flex">
+                  <div class="itemSlider">
+                    <div class="">
                       <img
                         src="./src/img/star.png"
-                        alt="bintang"
-                        class="w-4" />
+                        alt="bintang" />
                       <img
                         src="./src/img/star.png"
-                        alt="bintang"
-                        class="w-4" />
+                        alt="bintang" />
                       <img
                         src="./src/img/star.png"
-                        alt="bintang"
-                        class="w-4" />
+                        alt="bintang" />
                       <img
                         src="./src/img/star.png"
-                        alt="bintang"
-                        class="w-4" />
+                        alt="bintang" />
                       <img
                         src="./src/img/star.png"
-                        alt="bintang"
-                        class="w-4" />
+                        alt="bintang" />
                     </div>
-                    <p class="text-slate-500 text-[15px] my-5 testimoni-text">
-                      Saya menggunakan jasa travel reguler dari Surabaya ke
-                      Denpasar dan benar-benar puas dengan pengalamannya.
+                    <p class="testimoni">
+                      Snack di sediakan, driver ramah, perjalanan tepat waktu sesuai pesanan, harga sesuai pesanan dan include tol juga.
                     </p>
-                    <div class="flex gap-x-4">
+                    <div class="user-testimoni">
                       <img
                         src="./src/img/group.png"
-                        alt="testimoni"
-                        class="w-10 border rounded-3xl p-1 bg-gradient-to-r from-blue-600 to-blue-900" />
-                      <div class="flex flex-col justify-center">
-                        <p class="font-semibold text-sm">Dion Zebua</p>
-                        <p class="text-slate-500 text-xs">Web Developer</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div
-                    class="itemSlider shadow-2xl p-5 border rounded-xl col-span-full sm:col-span-6 lg:col-span-4">
-                    <div class="flex">
-                      <img
-                        src="./src/img/star.png"
-                        alt="bintang"
-                        class="w-4" />
-                      <img
-                        src="./src/img/star.png"
-                        alt="bintang"
-                        class="w-4" />
-                      <img
-                        src="./src/img/star.png"
-                        alt="bintang"
-                        class="w-4" />
-                      <img
-                        src="./src/img/star.png"
-                        alt="bintang"
-                        class="w-4" />
-                      <img
-                        src="./src/img/star.png"
-                        alt="bintang"
-                        class="w-4" />
-                    </div>
-                    <p class="text-slate-500 text-[15px] my-5 testimoni-text">
-                      Saya menggunakan jasa travel reguler dari Surabaya ke
-                      Denpasar dan benar-benar puas dengan pengalamannya.
-                    </p>
-                    <div class="flex gap-x-4">
-                      <img
-                        src="./src/img/group.png"
-                        alt="testimoni"
-                        class="w-10 border rounded-3xl p-1 bg-gradient-to-r from-blue-600 to-blue-900" />
-                      <div class="flex flex-col justify-center">
-                        <p class="font-semibold text-sm">Dion Zebua</p>
-                        <p class="text-slate-500 text-xs">Web Developer</p>
+                        alt="testimoni" />
+                      <div>
+                        <p>Joko</p>
+                        <p>Buruh Pabrik</p>
                       </div>
                     </div>
                   </div>
@@ -1227,7 +1138,7 @@
               </div>
 
               <div
-                class="p-5 col-span-full sm:col-span-4 border-t-2 border-b-2 sm:border-t-0 sm:border-b-0 border-blue-700 flex flex-col justify-start items-center gap-y-5">
+                class="p-5 col-span-full sm:col-span-4 border-t-2 border-b-2 sm:border-t-0 sm:border-b-0 sm:border-l-2 sm:border-r-2 border-blue-700 flex flex-col justify-start items-center gap-y-5">
                 <svg
                   viewBox="0 0 612 612"
                   xmlns="http://www.w3.org/2000/svg"
@@ -1259,25 +1170,33 @@
               </div>
             </div>
           </div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3954.777392445418!2d112.6924734!3d-7.599188800000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7d9b1cdd86191%3A0x6b7b41ff1f983176!2sBERKAH%20RENTAL%20MOBIL!5e0!3m2!1sid!2sid!4v1729240263721!5m2!1sid!2sid"
+            allowfullscreen=""
+            loading="lazy"
+            class="w-full h-60 border-4 brightness-75 hover:brightness-100 transition-all duration-700 shadow-lg rounded-lg border-blue-600"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </section>
       <!-- Kontak -->
     </main>
 
     <footer class="py-5">
-      <a href="#!" class="fixed right-5 bottom-5 bg-green-700 hover:bg-green-600 transition-all duration-700 z-[99] rounded-full p-2">
-          <svg
-            aria-hidden="true"
-            role="img"
-            height="1em"
-            width="1em"
-            viewBox="0 0 448 512"
-            xmlns="http://www.w3.org/2000/svg"
-            class="size-10">
-            <path
-              class="fill-slate-200"
-              d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"></path>
-          </svg>
+      <a
+        href="#!"
+        class="fixed right-5 bottom-5 bg-green-700 hover:bg-green-600 transition-all duration-700 z-[99] rounded-full p-2">
+        <svg
+          aria-hidden="true"
+          role="img"
+          height="1em"
+          width="1em"
+          viewBox="0 0 448 512"
+          xmlns="http://www.w3.org/2000/svg"
+          class="size-10">
+          <path
+            class="fill-slate-200"
+            d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"></path>
+        </svg>
       </a>
       <p class="text-center text-sm text-slate-500">
         &#169; copyright -
@@ -1289,7 +1208,7 @@
         >
       </p>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./src/js/swiper-bundle.min.js"></script>
 
     <script>
       var swiper = new Swiper(".mySwiper", {
