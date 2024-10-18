@@ -1291,7 +1291,7 @@ video {
 
   font-weight: 400;
 
-  src: url("./src/font/Poppins-Regular.ttf") format("woff2");
+  src: url("../font/Poppins-Regular.ttf") format("woff2");
 }
 
 .container {
