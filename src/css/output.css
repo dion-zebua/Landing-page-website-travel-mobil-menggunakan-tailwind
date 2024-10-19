@@ -898,6 +898,10 @@ video {
   overflow: hidden !important;
 }
 
+.overflow-hidden {
+  overflow: hidden;
+}
+
 .overflow-x-hidden {
   overflow-x: hidden;
 }
@@ -1292,6 +1296,7 @@ video {
   margin-left: auto;
   margin-right: auto;
   max-width: 1200px;
+  overflow-x: hidden !important;
   padding-left: 1.25rem;
   padding-right: 1.25rem;
   padding-top: 0.75rem;
@@ -1448,12 +1453,12 @@ header.activeHeader {
 }
 
 @media (min-width: 576px) {
-  .sm\:\!col-span-4 {
-    grid-column: span 4 / span 4 !important;
+  .sm\:\!col-span-2 {
+    grid-column: span 2 / span 2 !important;
   }
 
-  .sm\:\!col-span-8 {
-    grid-column: span 8 / span 8 !important;
+  .sm\:\!col-span-4 {
+    grid-column: span 4 / span 4 !important;
   }
 
   .sm\:col-span-4 {
